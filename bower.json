@@ -1,0 +1,19 @@
+{
+  "name": "Gulp",
+  "version": "0.0.0",
+  "authors": [
+    "maxx1128 <maxx1128@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "Maxwell-bitters": "maxx1128/Maxwell-bitters"
+  },
+  "devDependencies": {
+    "bourbon": "~4.2.3",
+    "neat": "~1.7.2",
+    "angular": "~1.4.3"
+  }
+}

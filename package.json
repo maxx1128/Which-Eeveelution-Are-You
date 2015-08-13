@@ -1,0 +1,46 @@
+{
+  "name": "maxwell_workflow",
+  "version": "1.1.0",
+  "description": "A starting workflow for web development projects using Gulp and Node.js",
+  "author": "Maxwell Antonucci <maxx1128@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxx1128/Maxwell_Workflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxx1128/Maxwell_Workflow/issues"
+  },
+  "keywords": [
+    "gulp",
+    "front-end",
+    "bourbon",
+    "front-end development",
+    "Sass",
+    "Javascript",
+    "Jade"
+  ],
+  "devDependencies": {
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-bower": "0.0.10",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-include": "^2.0.2",
+    "gulp-jade": "^1.0.1",
+    "gulp-jshint": "^1.11.2",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-scss-lint": "^0.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-uncss": "^1.0.1",
+    "jshint-stylish": "^2.0.1",
+    "sassdoc": "^2.1.15"
+  },
+  "licence": "MIT"
+}
