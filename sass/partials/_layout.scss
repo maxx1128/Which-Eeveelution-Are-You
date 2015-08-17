@@ -8,3 +8,27 @@ body {
 		@include shift(2);
 	}
 }
+
+.results {
+	@include outer-container;
+	@include margin(1em 0);
+
+	.eevee-result {
+		@include span-columns(1 of 1);
+		@include pad(.5em);		
+	}
+
+	@include media($tablet-screen) {
+		@include fill-parent();
+		@include row(table);
+		
+		.eevee-result {
+			@include span-columns(1 of 3);
+			margin-right: 0px;
+			
+			&:nth-of-type(3n) {
+				@include reset-display;
+			}
+		}
+	}
+}
