@@ -1,14 +1,26 @@
 include extends/header.jade
 
-body
+body(ng-app="eeveeApp", ng-controller="quizData")
 	h1 Welcome to the Eevee quiz!
 	
 	fieldset
-		p Fieldset element!
+		form
+			.question-1(ng-repeat="question in questions")
+				h4 Question {{question.number}}
+				
+				div(ng-repeat="answer in question.answers")
+					input(type="radio", name="question-{{question.number}}", value="{{answer.text}}")
+					|	{{answer.text}}
+					br
 
 	#js-parallax-window.parallax-window
 		.parallax-static-content
 			b Parallax Window
 		#js-parallax-background.parallax-background
+
+	.results
+		div.eevee-result(ng-repeat="result in results")
+			h5 {{result.name}}
+			p {{result.type}}
 
 include extends/footer.jade
