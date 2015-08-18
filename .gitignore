@@ -1,7 +1,3 @@
 node_modules/*
 components/*
-build/sftp-config.json
-build/assets/css/style.min.css
 npm-debug.log
-
-!components/_components.scss
