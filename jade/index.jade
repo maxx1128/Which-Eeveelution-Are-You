@@ -9,10 +9,10 @@ body(ng-app="eeveeApp", ng-controller="quizData")
 				h4 Question {{question.number}}
 				
 				div(ng-repeat="answer in question.answers")
-					input(type="radio", name="question-{{question.number}}", value="{{answer.text}}")
+					input(type="radio", name="question-{{question.number}}", value="{{answer.index}}", ng-model="question.selected")
 					|	{{answer.text}}
 					br
-				button(ng-click="results[1].value = results[1].value + 1") Answer here!
+				button(ng-click="answer(question.selected)") Answer here!
 
 	#js-parallax-window.parallax-window
 		.parallax-static-content(ng-repeat="result in results | orderBy:'-value' | limitTo:1")
