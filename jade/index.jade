@@ -12,15 +12,18 @@ body(ng-app="eeveeApp", ng-controller="quizData")
 					input(type="radio", name="question-{{question.number}}", value="{{answer.text}}")
 					|	{{answer.text}}
 					br
+				button(ng-click="results[1].value = results[1].value + 1") Answer here!
 
 	#js-parallax-window.parallax-window
-		.parallax-static-content
-			b Parallax Window
+		.parallax-static-content(ng-repeat="result in results | orderBy:'-value' | limitTo:1")
+			h2 The winner is {{result.name}}!
 		#js-parallax-background.parallax-background
-
+		div
+			
 	.results
-		div.eevee-result(ng-repeat="result in results")
-			h5 {{result.name}}
+		div.eevee-result(ng-repeat="result in results | orderBy:'-value'")
+			h5 {{result.name}} at {{$index}}
 			p {{result.type}}
+			p {{result.value}}
 
 include extends/footer.jade
