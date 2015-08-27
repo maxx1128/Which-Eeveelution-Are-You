@@ -15,15 +15,13 @@ body(ng-app="eeveeApp", ng-controller="quizData")
 				button(ng-click="answer(question.selected)") Answer here!
 
 	.results(ng-show="quizOver")
-		#js-parallax-window.parallax-window
-			.parallax-static-content(ng-repeat="result in results | orderBy:'-value' | limitTo:1")
+		#js-parallax-window.parallax-window(ng-repeat="result in results | orderBy:'-value' | limitTo:1")
+			.parallax-static-content
 				h2 The winner is {{result.name}}!
-			#js-parallax-background.parallax-background
-			div
-				
+			#js-parallax-background.parallax-background(class="{{result.name}}-parallax")		
 		
-		div.eevee-result(ng-repeat="result in results | orderBy:'-value'")
-			h5 {{result.name}} at {{$index}}
+		div.eevee-result(class="{{result.type}}", ng-repeat="result in results | orderBy:'-value'")
+			h5 {{result.name}}
 			p {{result.type}}
 			p {{result.value}}
 
