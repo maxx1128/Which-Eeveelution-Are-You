@@ -152,7 +152,7 @@ gulp.task('jade', function() {
 // Task to watch the things!
 gulp.task('watch', function(){
   livereload.listen();
-    gulp.watch('js/*.js', ['scripts']);
+    gulp.watch('js/**/*.js', ['scripts']);
     gulp.watch(['sass/**/*.scss','components/_components.scss'], ['sass']);
     gulp.watch('jade/**/**/*.jade', ['jade']);
   gulp.watch('img/*', ['images']);

@@ -3,9 +3,9 @@ include extends/header.jade
 body(ng-app="eeveeApp", ng-controller="quizData")
 	h1 Welcome to the Eevee quiz!
 	
-	fieldset
+	fieldset(ng-show="!quizOver")
 		form
-			.question-1(ng-repeat="question in questions")
+			.question-1(ng-repeat="question in questions | filter:isStatus")
 				h4 Question {{question.number}}
 				
 				div(ng-repeat="answer in question.answers")
@@ -14,13 +14,14 @@ body(ng-app="eeveeApp", ng-controller="quizData")
 					br
 				button(ng-click="answer(question.selected)") Answer here!
 
-	#js-parallax-window.parallax-window
-		.parallax-static-content(ng-repeat="result in results | orderBy:'-value' | limitTo:1")
-			h2 The winner is {{result.name}}!
-		#js-parallax-background.parallax-background
-		div
-			
-	.results
+	.results(ng-show="quizOver")
+		#js-parallax-window.parallax-window
+			.parallax-static-content(ng-repeat="result in results | orderBy:'-value' | limitTo:1")
+				h2 The winner is {{result.name}}!
+			#js-parallax-background.parallax-background
+			div
+				
+		
 		div.eevee-result(ng-repeat="result in results | orderBy:'-value'")
 			h5 {{result.name}} at {{$index}}
 			p {{result.type}}
