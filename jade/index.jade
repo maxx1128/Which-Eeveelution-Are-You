@@ -2,11 +2,13 @@ include extends/header.jade
 
 body(ng-app="eeveeApp", ng-controller="quizData")
 	h1 Welcome to the Eevee quiz!
-	
+	h5 Don't forget Github link!
+	h6 Also a way to tweet/share results?
+
 	fieldset(ng-show="!quizOver")
 		form
 			.question-1(ng-repeat="question in questions | filter:isStatus")
-				h4 Question {{question.number}}
+				h4 Question {{question.number}}: {{question.question}}
 				
 				div(ng-repeat="answer in question.answers")
 					input(type="radio", name="question-{{question.number}}", value="{{answer.index}}", ng-model="question.selected")
