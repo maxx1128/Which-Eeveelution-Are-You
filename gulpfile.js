@@ -27,8 +27,8 @@ app.listen(3000)
 console.log('Express site on 3000!')
 
 var config = {
-    projectPath: 'build/',
-    assetsPath: 'build/assets/',
+    projectPath: '',
+    assetsPath: 'assets/',
     componentPath: 'components/'
 }
 
