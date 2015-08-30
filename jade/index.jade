@@ -22,7 +22,7 @@ body(ng-app="eeveeApp", ng-controller="quizData")
 				h2 The winner is {{result.name}}!
 			#js-parallax-background.parallax-background(class="{{result.name}}-parallax")
 		
-		div.eevee-result(class="{{result.type}}", ng-repeat="result in results | orderBy:'-value'")
+		div.eevee-result(class="{{result.name}}-resultBox", ng-repeat="result in results | orderBy:'-value'")
 			h5 {{result.name}}
 			p {{result.type}}
 			p {{result.value}}

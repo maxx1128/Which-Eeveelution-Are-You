@@ -2,6 +2,13 @@
 
 // Parallax backgrounds for winning areas:
 
+.eevee-result {
+	background-color: purple;
+	text-align: center;
+	box-sizing: border-box;
+	padding: .5em;
+}
+
 $eevee-list: Eevee Vaporeon Jolteon Flareon Espeon Umbreon Leafeon Glaceon Sylveon;
 
 @each $eeveelution in $eevee-list {
@@ -13,6 +20,10 @@ $eevee-list: Eevee Vaporeon Jolteon Flareon Espeon Umbreon Leafeon Glaceon Sylve
 
 	.#{$eeveelution}-static {
 		color: eeveelution(Eevee-text);
+	}
+
+	.#{$eeveelution}-resultBox {
+		background-color: eeveelution(#{$eeveelution}-bg);
 	}
 }
 
