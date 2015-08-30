@@ -16,11 +16,11 @@ body(ng-app="eeveeApp", ng-controller="quizData")
 					br
 				button(ng-click="answer(question.selected)") Answer here!
 
-	.results(ng-show="quizOver")
+	.results(ng-show="!quizOver")
 		#js-parallax-window.parallax-window(ng-repeat="result in results | orderBy:'-value' | limitTo:1")
-			.parallax-static-content
+			.parallax-static-content(class="{{result.name}}-static")
 				h2 The winner is {{result.name}}!
-			#js-parallax-background.parallax-background(class="{{result.name}}-parallax")		
+			#js-parallax-background.parallax-background(class="{{result.name}}-parallax")
 		
 		div.eevee-result(class="{{result.type}}", ng-repeat="result in results | orderBy:'-value'")
 			h5 {{result.name}}

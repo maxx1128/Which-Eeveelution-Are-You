@@ -1,6 +1,26 @@
-.results {
+// Styles for winning static areas
 
-	.eevee-result {
-		text-align: center;
+// Parallax backgrounds for winning areas:
+
+$eevee-list: Eevee Vaporeon Jolteon Flareon Espeon Umbreon Leafeon Glaceon Sylveon;
+
+@each $eeveelution in $eevee-list {
+	.#{$eeveelution}-parallax {
+	  background: url(eeveelution(#{$eeveelution}-pic)) no-repeat;
+	  background-color: eeveelution(#{$eeveelution}-bg);
+	  @extend .parallax-basics;
 	}
+
+	.#{$eeveelution}-static {
+		color: eeveelution(Eevee-text);
+	}
+}
+
+.parallax-basics {
+  background-position: center right;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 2;
+  width: 100%;
 }
