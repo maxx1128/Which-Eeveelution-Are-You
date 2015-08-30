@@ -14,4 +14,8 @@ $parallax-background-height: 30em;
   padding: 8em 0;
   position: relative;
   z-index: 9;
+
+  @include media($mobile-h-screen) {
+  	width: 75%;
+  }
 }
