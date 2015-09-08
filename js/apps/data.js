@@ -68,7 +68,7 @@ $scope.questions = [
 	}, {
 		'number': 4,
 		'selected': '',
-		'question': 'What\s your favorite way to exercise?',
+		'question': 'What\'s your favorite way to exercise?',
 		'answers':[
 			{
 				'text': 'Jogging outside',
@@ -313,38 +313,47 @@ $scope.questions = [
 	{
 		'name': 'Eevee',
 		'type': 'Normal',
-		'value': 0
+		'value': 0,
+		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum purus nec consequat ultrices. Vivamus quis risus placerat, scelerisque libero ac, interdum nisl. Proin eu ex turpis. Mauris volutpat, arcu quis fringilla aliquet, massa justo volutpat eros, sed aliquet sem nisi id nisl. Sed sodales eros ipsum. Nam sit amet volutpat lorem. Maecenas vitae pulvinar diam. Suspendisse varius quam et ex rutrum, vel efficitur metus suscipit. Cras a efficitur nulla. Quisque at est lacinia, condimentum urna vel, pharetra ex. Donec interdum porttitor tempor.'
 	}, {
 		'name': 'Vaporeon',
 		'type': 'Water',
-		'value': 0
+		'value': 0,
+		'description': 'Winning personality description here!'
 	}, {
 		'name': 'Jolteon',
 		'type': 'Electric',
-		'value': 0
+		'value': 0,
+		'description': 'Winning personality description here!'
 	}, {
 		'name': 'Flareon',
 		'type': 'Fire',
-		'value': 0
+		'value': 0,
+		'description': 'Winning personality description here!'
 	}, {
 		'name': 'Espeon',
 		'type': 'Psychic',
-		'value': 0
+		'value': 0,
+		'description': 'Winning personality description here!'
 	}, {
 		'name': 'Umbreon',
 		'type': 'Dark',
-		'value': 0
+		'value': 0,
+		'description': 'Winning personality description here!'
 	}, {
 		'name': 'Leafeon',
 		'type': 'Grass',
-		'value': 0
+		'value': 0,
+		'description': 'Winning personality description here!'
 	}, {
 		'name': 'Glaceon',
 		'type': 'Ice',
-		'value': 0
+		'value': 0,
+		'description': 'Winning personality description here!'
 	}, {
 		'name': 'Sylveon',
 		'type': 'Fairy',
-		'value': 0
+		'value': 0,
+		'description': 'Winning personality description here!'
 	}
 ];

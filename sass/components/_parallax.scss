@@ -10,12 +10,11 @@ $parallax-background-height: 30em;
 }
 
 .parallax-static-content {
-  color: #9A9A8A;
-  padding: 8em 0;
+  padding: 10% 2em;
   position: relative;
   z-index: 9;
 
   @include media(breakpoint(mobile-h)) {
-  	width: 75%;
+  	width: 67.5%;
   }
 }
