@@ -1,0 +1,35 @@
+// Main CSS File
+// ======
+
+@import 
+ '../components/bourbon/app/assets/stylesheets/bourbon',
+ '../components/neat/app/assets/stylesheets/neat';
+
+@import
+  'utils/functions',
+  'utils/variables',
+	'utils/mixins',
+	'utils/placeholders';
+
+@import
+  'base/typography',
+  'base/colors';
+
+ 
+@import
+  'layout/grid';
+
+@import
+  'components/tables',
+  'components/forms',
+  'components/lists',
+  'components/pre',
+  'components/parallax';
+
+@import
+  'pages/home',
+  'pages/results';
+
+@import
+  'themes/theme',
+  'themes/admin';

@@ -1,0 +1,41 @@
+/// This is the Functions page
+
+/// Use this helper function to easily get the colors
+/// @param {string} $color - The color from the Colors map to be used.
+/// @group Colors
+/// @see colors
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+ 
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+/// This is the function for pulling breakpoints from the sass map. This, when combined with the media function in the Neat dependency, is crucial for creating a responsive grid layout.
+/// @group Grid
+/// @param {string} $layout - The semantic name for each device screen width, such as tablet or desktop.
+/// @see breakpoints
+/// @link http://neat.bourbon.io/
+@function breakpoint($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return map-get($breakpoints, $key);
+  }
+ 
+  @warn "Unknown `#{$key}` in $breakpoints.";
+  @return null;
+}
+
+/// For using organized z-index values
+/// @param {string} key - The common element connected to each z-value.
+/// @group Layout
+/// @see z-layers
+@function z-index($key) {
+  @if map-has-key($z-layers, $key) {
+    @return map-get($z-layers, $key);
+  }
+ 
+  @warn "Unknown `#{$key}` in $z-layers.";
+  @return null;
+}

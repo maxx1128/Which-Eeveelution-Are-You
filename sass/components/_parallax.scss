@@ -15,7 +15,7 @@ $parallax-background-height: 30em;
   position: relative;
   z-index: 9;
 
-  @include media($mobile-h-screen) {
+  @include media(breakpoint(mobile-h)) {
   	width: 75%;
   }
 }

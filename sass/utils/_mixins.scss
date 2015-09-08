@@ -1,12 +1,8 @@
-/// This is the Mixins page
-/// @group Core Mixins
-
-/// The fix-cell and flex-cell mixins included components
-/// of the fix-flex mixin, which is used for items with a fixed
-/// width on one side and flexible on the other.
-/// @name Fix-Flex Mixin
+/// The fix-cell and flex-cell mixins included components of the fix-flex mixin, which is used for items with a fixed width on one side and flexible on the other.
+/// @name fix-flex
 /// @author Krispin Dolbear, EMA
-/// @param {true or false string} $fix-direction - If the fixed element is on the left or right side
+/// @group Layout
+/// @param {string} $fix-direction - If the fixed element is on the left or right side
 /// @param {length} $fix-width - The width of the fixed element
 /// @param {length} $fix-margin - The margin length between the two items
 /// @example 
@@ -32,41 +28,25 @@
     }
   }
 }
+
+/// @see {mixin} fix-flex
+/// @group Dependencies
 @mixin fix-cell($fix-direction,$fix-width) {
   width: $fix-width;
   display: block;
   max-width: none;
 }
+/// @see {mixin} fix-flex
+/// @group Dependencies
 @mixin flex-cell {
   display: table-cell;
   width: 100%;
   vertical-align: middle;
 }
 
-/// The animation mixin that's a prerequisite for the keyframes mixin.
-/// Used for creating keyframe animation classes for elements
-/// @name Animation Setup
-@mixin animation($animate...) {
-    $max: length($animate);
-    $animations: '';
-
-    @for $i from 1 through $max {
-        $animations: #{$animations + nth($animate, $i)};
-
-        @if $i < $max {
-            $animations: #{$animations + ", "};
-        }
-    }
-    -webkit-animation: $animations;
-    -moz-animation:    $animations;
-    -o-animation:      $animations;
-    animation:         $animations;
-}
-
-/// This is the main mixin for creating keyframe animations with cross-browser
-/// compatibility automatically set up. It needs the name and also the body with
-/// the keyframe locations and properties.
-/// @name Keyframe mixin
+/// This is the main mixin for creating keyframe animations with cross-browser compatibility automatically set up. It needs the name and also the body with the keyframe locations and properties.
+/// @name keyframes
+/// @group Animation
 /// @param {string} $animationName - The name of the animation to be referenced
 /// @example
 ///   @include keyframes(name-here) {
@@ -89,4 +69,23 @@
     @keyframes #{$animationName} {
         @content;
     }
+}
+/// This is the setup for the keyframes mixin
+/// @see keyframes
+/// @group Dependencies
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
 }

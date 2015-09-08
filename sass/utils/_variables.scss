@@ -1,0 +1,218 @@
+// ----- Grid Variables ----- //
+
+/// These are the core breakpoints for the grid. They use the values in the breakpoint lengths map to determine the breakpoints. This, along with other grid functionality, uses the Neat dependency.
+/// @type Map
+/// @group Grid
+/// @example
+///   body {
+///     @include media(breakpoint(tablet)) {
+///       @include span-columns(10);
+///       @include shift(1);
+///     }
+///   }
+/// @link http://neat.bourbon.io/
+$breakpoints: (
+  mobile: new-breakpoint(min-width 320px),
+  mobile-h: new-breakpoint(min-width 480px),
+  tablet: new-breakpoint(min-width 787px),
+  desktop: new-breakpoint(min-width 900px),
+  huge: new-breakpoint(min-width 1200px),
+);
+
+
+// ----- Typography Variables ----- //
+
+/// The default font family for all text except headers. Can be a specific font family or a Bourbon font stack variable.
+/// @type Variable | String(s)
+/// @group Typography
+/// @link http://bourbon.io/docs/#font-face
+$base-font-family: $lucida-grande;
+
+/// The default font family for only headers. Can be a specific font family or a Bourbon font variable. By default, it's the same as the base font.
+/// @type Variable | String(s)
+/// @group Typography
+$heading-font-family: $base-font-family;
+
+/// The font size that all other element font sizes are scaled off of. This is often the size of basic paragraph text, and is scaled up for headers.
+/// @type Unit of Size(em)
+/// @group Typography
+/// @see modular-scale-ratio
+$base-font-size: 1em;
+
+/// This is the initial scale of the modular scale ration you want your font sizes to begin at. Typically left at zero, which will make your basic text the same of your base font size. Header font sizes will scale up.
+/// @type Integer
+/// @group Typography
+/// @see base-font-size
+/// @see modular-scale-ratio
+/// @see modular-size-map
+$base-font-scale: 0;
+
+/// This is the modular scale the fonts will use for sizes. It can be a Bourbon variable or an integer with decimals.
+/// @type Integer
+/// @group Typography
+/// @see modular-size-map
+/// @link http://www.modularscale.com/
+/// @link https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/functions/_modular-scale.scss
+$modular-scale-ratio: $minor-third;
+
+/// This is the base font size to be used when creating all the other scaled font sizes. Best left as the base font size in most cases.
+/// @type Integer
+/// @group Typography
+/// @see modular-size-map
+/// @see modular-scale-ratio
+$modular-scale-base: $base-font-size;
+
+/// When the screen gets below a certain size, this is the percentage of the original font size the font becomes. For example, a value of .9 means the font shrinks to 90% of its size on smaller screens.
+/// @type Integer
+/// @group Typography
+/// @see modular-size-map
+/// @see modular-scale-ratio
+$scaled-font-ratio: .9;
+
+/// This uses the Bourbon modular-scale function to create the structure of how fonts will be sized in the modular scale. An each loop is used to generate the scaled font sizes.
+/// @type Map
+/// @link http://bourbon.io/docs/#modular-scale
+/// @group Typography
+/// @see base-font-scale
+/// @see modular-scale-ratio
+$modular-size-map: (
+   h1: $base-font-scale + 6,
+   h2: $base-font-scale + 5,
+   h3: $base-font-scale + 4,
+   h4: $base-font-scale + 3,
+   h5: $base-font-scale + 2,
+   h6: $base-font-scale + 1,
+   p: $base-font-scale,
+);
+/// This generates the font sizes based on modular scale so they're consistent and easy to manage.
+@each $key, $value in $modular-size-map {
+  $main-font-size: modular-scale($value);
+  $scaled-font-size: $main-font-size * $scaled-font-ratio;
+
+   #{$key} {
+      font-size: $scaled-font-size;
+
+      @include media(breakpoint(tablet)) {
+        font-size: $main-font-size;
+      }
+   }   
+}
+
+
+// ----- Layout Variables ----- //
+
+/// The base line height for all major text elements aside from headers.
+/// @type Integer
+/// @group Typography
+$base-line-height: 1.6;
+
+/// The base line height for only headers.
+/// @type Integer
+/// @group Typography
+$heading-line-height: 1.1;
+
+/// For any elements that need a border radius property, this is the standard measure.
+/// @type Integer
+/// @group Layout
+$base-border-radius: 5px;
+
+/// Mainly for padding elements, this is based off the line height for a standard measure of padding
+/// @type Integer
+/// @group Layout
+$base-spacing: $base-line-height * 1em;
+
+/// Another standard unit for spacing, this one half of the base spacing for more precise layout areas.
+/// @type Integer
+/// @group Layout
+$small-spacing: $base-spacing / 2;
+
+
+/// Lays out the different z-index values to help keep them organized. Based off what commom elements they'd be used for.
+/// @type Map
+/// @group Layout
+/// @see z-index
+$z-layers: (
+  bottomless-pit: -9999,
+  default: 1,
+  dropdown: 3000,
+  overlay: 4000,
+  modal: 4001
+);
+
+
+// ----- Color Variables ----- //
+
+/// This map is the array of standard colors for the project. Uses the Color function to reference them throughout the stylesheet. For colors that are frequently changing values, key names that aren't colors are recommended over literal names (such as the name 'cute' instead of pink).
+/// @type Map
+/// @group Colors
+/// @see color
+$colors: (
+  white: #fff,
+  blue: #477dca,
+  dark-gray: #333,
+  medium-gray: #999,
+  light-gray: #ddd
+);
+
+/// This is the base color for all fonts, including headers. The color value is pulled through the color function.
+/// @type Color
+/// @group Colors
+/// @see colors
+$base-font-color: color(dark-gray);
+
+/// This is the base color any text that is interactive and will create a change somehow, like clicking on a link. Color is pulled from a map.
+/// @type Color
+/// @group Colors
+/// @see colors
+$action-color: color(blue);
+
+/// For any elements requiring borders, such as panels, this will be the standard border color.
+/// @type Color
+/// @group Colors
+/// @see colors
+$base-border-color: color(light-gray);
+
+/// This is the base border style, including its color and thickness.
+/// @type Values
+/// @group Layout
+/// @see colors
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+/// Standard background color for the whole project. Light colors are recommended.
+/// @type Color
+/// @group Colors
+/// @see colors
+$base-background-color: color(white);
+
+/// A tinted version of the standard background color. Slightly darker than the base one.
+/// @type Color
+/// @group Colors
+/// @see colors
+$secondary-background-color: tint($base-border-color, 75%);
+
+
+// ----- Form Variables ----- //
+
+/// The inner shadow that appears in form input elements, such as check boxes.
+/// @type Values
+/// @group Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+
+/// When clicking and focusing on a form element, like an input box, this is the shadow that appears to show it's selected to fill out.
+/// @type Values
+/// @group Forms
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+
+// ----- Other Variables ----- //
+
+/// For any animations or possibly transitions too, this is the standard time for them to keep it consistent.
+/// @type Integer
+/// @group Animation
+$base-duration: 150ms;
+
+/// For the transition property, also to keep it more consistent across animations.
+/// @type Integer
+/// @group Animation
+$base-timing: ease;

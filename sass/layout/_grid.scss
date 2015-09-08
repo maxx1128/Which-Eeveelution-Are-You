@@ -3,7 +3,7 @@ body {
 	@include span-columns(10);
 	@include shift(1);
 
-	@include media($desktop-screen) {
+	@include media(breakpoint(tablet)) {
 		@include span-columns(8);
 		@include shift(2);
 	}
