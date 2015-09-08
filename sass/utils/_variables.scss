@@ -67,7 +67,7 @@ $modular-scale-base: $base-font-size;
 /// @group Typography
 /// @see modular-size-map
 /// @see modular-scale-ratio
-$scaled-font-ratio: .9;
+$scaled-font-ratio: .8;
 
 /// This uses the Bourbon modular-scale function to create the structure of how fonts will be sized in the modular scale. An each loop is used to generate the scaled font sizes.
 /// @type Map
@@ -84,19 +84,6 @@ $modular-size-map: (
    h6: $base-font-scale + 1,
    p: $base-font-scale,
 );
-/// This generates the font sizes based on modular scale so they're consistent and easy to manage.
-@each $key, $value in $modular-size-map {
-  $main-font-size: modular-scale($value);
-  $scaled-font-size: $main-font-size * $scaled-font-ratio;
-
-   #{$key} {
-      font-size: $scaled-font-size;
-
-      @include media(breakpoint(tablet)) {
-        font-size: $main-font-size;
-      }
-   }   
-}
 
 
 // ----- Layout Variables ----- //

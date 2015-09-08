@@ -1,3 +1,17 @@
+/// This generates the font sizes based on modular scale so they're consistent and easy to manage.
+@each $key, $value in $modular-size-map {
+  $main-font-size: modular-scale($value);
+  $scaled-font-size: $main-font-size * $scaled-font-ratio;
+
+  #{$key} {
+      font-size: $scaled-font-size;
+
+      @include media(breakpoint(tablet)) {
+        font-size: $main-font-size;
+      }
+   } 
+}
+
 body {
   color: $base-font-color;
   font-family: $base-font-family;
