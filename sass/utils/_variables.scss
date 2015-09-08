@@ -203,3 +203,47 @@ $base-duration: 150ms;
 /// @type Integer
 /// @group Animation
 $base-timing: ease;
+
+
+/// These are eeveelution-specific variables, such as background color, text color, and picture for the results. They're looped through to generate the result styles in the pages/results stylesheet.
+/// @type Map
+/// @group Eevees
+/// @see eeveelution
+$eeveelutions: (
+
+  Eevee-bg: brown,
+  Eevee-text: brown,
+  Eevee-pic: "http://img2.wikia.nocookie.net/__cb20140810044703/pokemon/images/c/ce/133Eevee_BW_anime.png",
+
+  Vaporeon-bg: blue,
+  Vaporeon-text: blue,
+  Vaporeon-pic: "http://www.dltk-kids.com/pokemon/adoptions/134.gif",
+
+  Jolteon-bg: yellow,
+  Jolteon-text: yellow,
+  Jolteon-pic: "http://img2.wikia.nocookie.net/__cb20140810044703/pokemon/images/c/ce/133Eevee_BW_anime.png",
+
+  Flareon-bg: red,
+  Flareon-text:red,
+  Flareon-pic: "http://img2.wikia.nocookie.net/__cb20140810044703/pokemon/images/c/ce/133Eevee_BW_anime.png",
+
+  Espeon-bg: purple,
+  Espeon-text: purple,
+  Espeon-pic: "http://img2.wikia.nocookie.net/__cb20140810044703/pokemon/images/c/ce/133Eevee_BW_anime.png",
+
+  Umbreon-bg: gray,
+  Umbreon-text: black,
+  Umbreon-pic: "http://img2.wikia.nocookie.net/__cb20140810044703/pokemon/images/c/ce/133Eevee_BW_anime.png",
+
+  Leafeon-bg: green,
+  Leafeon-text: green,
+  Leafeon-pic: "http://img2.wikia.nocookie.net/__cb20140810044703/pokemon/images/c/ce/133Eevee_BW_anime.png",
+
+  Glaceon-bg: turquoise,
+  Glaceon-text: turquoise,
+  Glaceon-pic: "http://img2.wikia.nocookie.net/__cb20140810044703/pokemon/images/c/ce/133Eevee_BW_anime.png",
+
+  Sylveon-bg: pink,
+  Sylveon-text: pink,
+  Sylveon-pic: "http://img2.wikia.nocookie.net/__cb20140810044703/pokemon/images/c/ce/133Eevee_BW_anime.png"
+);

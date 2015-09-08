@@ -17,17 +17,17 @@ $eevee-list: Eevee Vaporeon Jolteon Flareon Espeon Umbreon Leafeon Glaceon Sylve
 		background-image: url(eeveelution(#{$eeveelution}-pic));
 	  }
 
-	  background-color: eeveelution(#{$eeveelution}-bg);
+	  background-color: lighten(eeveelution(#{$eeveelution}-bg), 35%);
 	  @extend .parallax-basics;
 	}
 
 	.#{$eeveelution}-static {
-		color: eeveelution(#{$eeveelution}-text);
+		color: darken(eeveelution(#{$eeveelution}-text), 35%);
 	}
 
 	.#{$eeveelution}-resultBox {
-		color: darken(eeveelution(#{$eeveelution}-text), 20%);
-		background-color: lighten(eeveelution(#{$eeveelution}-bg), 20%);
+		color: darken(eeveelution(#{$eeveelution}-text), 25%);
+		background-color: lighten(eeveelution(#{$eeveelution}-bg), 25%);
 	}
 }
 

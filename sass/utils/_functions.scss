@@ -39,3 +39,16 @@
   @warn "Unknown `#{$key}` in $z-layers.";
   @return null;
 }
+
+/// For getting the basic colors and images for each eeveelution.
+/// @param {string} key - The capitalized name of the eeveelution, followed by a dash and either bg (background color), text (text color), or pic for their picture
+/// @group Eevees
+/// @see eeveelutions 
+@function eeveelution($key) {
+  @if map-has-key($eeveelutions, $key) {
+    @return map-get($eeveelutions, $key);
+  }
+ 
+  @warn "Unknown `#{$key}` in $eeveelutions.";
+  @return null;
+}
