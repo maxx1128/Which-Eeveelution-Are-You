@@ -2,7 +2,7 @@ $parallax-window-height: 30em;
 $parallax-background-height: 30em;
 
 .parallax-window {
-  max-height: $parallax-window-height;
+  // max-height: $parallax-window-height;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -10,7 +10,7 @@ $parallax-background-height: 30em;
 }
 
 .parallax-static-content {
-  padding: 10% 2em;
+  padding: 5% 2em;
   position: relative;
   z-index: 9;
 
