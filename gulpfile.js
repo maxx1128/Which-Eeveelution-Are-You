@@ -13,7 +13,8 @@ var gulp = require('gulp'),
     sassdoc = require('sassdoc'),
     jsdoc = require('gulp-jsdoc'),
     uncss = require('gulp-uncss'),
-    express = require('express');
+    express = require('express'),
+    del = require('del');
 
 var express = require('express')
 var app = express()
@@ -129,7 +130,7 @@ gulp.task('images', function () {
             progressive: true
         }))
         .on("error", notify.onError("Error:" + errorLog))
-        .pipe(gulp.dest(config.assetsPath + 'assets/img'))
+        .pipe(gulp.dest(config.assetsPath +  '/img'))
         .pipe(notify({
         message: 'Images Optimized!',
         onLast: true
@@ -154,13 +155,21 @@ gulp.task('jade', function() {
         .pipe(livereload());
 });
 
+gulp.task('clean', function () {
+    return del([
+        'build/extends'
+    ]);
+});
+
+
+
 // Task to watch the things!
 gulp.task('watch', function(){
   livereload.listen();
     gulp.watch('js/**/**/*.js', ['scripts']);
     gulp.watch('sass/**/**/*.scss', ['sass']);
     gulp.watch('jade/**/**/*.jade', ['jade']);
-    gulp.watch('img/*', ['images']);
+    gulp.watch('jade/img/**/**/*', ['images']);
     gulp.watch('index.html', ['homepage']);
 });
 
@@ -171,4 +180,4 @@ gulp.task('docwatch', ['sassdoc','jsdoc'], function(){
 });
 
 gulp.task('default', ['scripts', 'sass', 'jade', 'images', 'watch']);
-gulp.task('prod', ['sassdoc', 'jsdoc', 'prod-init', 'uncss']);
+gulp.task('prod', ['sassdoc', 'jsdoc', 'clean', 'prod-init', 'uncss']);
