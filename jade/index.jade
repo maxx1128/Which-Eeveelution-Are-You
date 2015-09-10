@@ -5,27 +5,8 @@ body(ng-app="eeveeApp", ng-controller="quizData")
 	h5 Don't forget Github link!
 	h6 Also a way to tweet/share results??
 
-	fieldset(ng-show="!quizOver")
-		form
-			.question-1(ng-repeat="question in questions | filter:isStatus")
-				h4 Question {{question.number}}: {{question.question}}
-				
-				div(ng-repeat="answer in question.answers")
-					input(type="radio", name="question-{{question.number}}", value="{{answer.index}}", ng-model="question.selected")
-					|	{{answer.text}}
-					br
-				button(ng-click="answer(question.selected)") Answer here!
+	include extends/app/questions.jade
 
-	.results(ng-show="!quizOver")
-		#js-parallax-window.parallax-window(class="{{result.name}}-static", ng-repeat="result in results | orderBy:'-value' | limitTo:1")
-			.parallax-static-content
-				h2 The winner is {{result.name}}!
-				p {{result.description}}
-			#js-parallax-background.parallax-background(class="{{result.name}}-parallax")
-		
-		div.eevee-result(class="{{result.name}}-resultBox", ng-repeat="result in results | orderBy:'-value'")
-			h5 {{result.name}}
-			p The {{result.type}} Type!
-			p You scored {{result.value}} of {{totalPoints}}
+	include extends/app/results.jade
 
 include extends/footer.jade
