@@ -5,6 +5,10 @@ body(ng-app="eeveeApp", ng-controller="quizData")
 	h5 Don't forget Github link!
 	h6 Also a way to tweet/share results??
 
+.quiz-enter(ng-show="!quizBegin")
+	include extends/app/intro.jade
+
+.quiz-start(ng-show="quizBegin")
 	include extends/app/questions.jade
 
 	include extends/app/results.jade
