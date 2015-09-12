@@ -590,41 +590,41 @@ $scope.questions = [
 		'name': 'Vaporeon',
 		'type': 'Water',
 		'value': 0,
-		'description': 'Winning personality description here!'
+		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum purus nec consequat ultrices. Vivamus quis risus placerat, scelerisque libero ac, interdum nisl. Proin eu ex turpis. Mauris volutpat, arcu quis fringilla aliquet, massa justo volutpat eros, sed aliquet sem nisi id nisl. Sed sodales eros ipsum. Nam sit amet volutpat lorem. Maecenas vitae pulvinar diam. Suspendisse varius quam et ex rutrum, vel efficitur metus suscipit. Cras a efficitur nulla. Quisque at est lacinia, condimentum urna vel, pharetra ex. Donec interdum porttitor tempor.'
 	}, {
 		'name': 'Jolteon',
 		'type': 'Electric',
 		'value': 0,
-		'description': 'Winning personality description here!'
+		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum purus nec consequat ultrices. Vivamus quis risus placerat, scelerisque libero ac, interdum nisl. Proin eu ex turpis. Mauris volutpat, arcu quis fringilla aliquet, massa justo volutpat eros, sed aliquet sem nisi id nisl. Sed sodales eros ipsum. Nam sit amet volutpat lorem. Maecenas vitae pulvinar diam. Suspendisse varius quam et ex rutrum, vel efficitur metus suscipit. Cras a efficitur nulla. Quisque at est lacinia, condimentum urna vel, pharetra ex. Donec interdum porttitor tempor.'
 	}, {
 		'name': 'Flareon',
 		'type': 'Fire',
 		'value': 0,
-		'description': 'Winning personality description here!'
+		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum purus nec consequat ultrices. Vivamus quis risus placerat, scelerisque libero ac, interdum nisl. Proin eu ex turpis. Mauris volutpat, arcu quis fringilla aliquet, massa justo volutpat eros, sed aliquet sem nisi id nisl. Sed sodales eros ipsum. Nam sit amet volutpat lorem. Maecenas vitae pulvinar diam. Suspendisse varius quam et ex rutrum, vel efficitur metus suscipit. Cras a efficitur nulla. Quisque at est lacinia, condimentum urna vel, pharetra ex. Donec interdum porttitor tempor.'
 	}, {
 		'name': 'Espeon',
 		'type': 'Psychic',
 		'value': 0,
-		'description': 'Winning personality description here!'
+		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum purus nec consequat ultrices. Vivamus quis risus placerat, scelerisque libero ac, interdum nisl. Proin eu ex turpis. Mauris volutpat, arcu quis fringilla aliquet, massa justo volutpat eros, sed aliquet sem nisi id nisl. Sed sodales eros ipsum. Nam sit amet volutpat lorem. Maecenas vitae pulvinar diam. Suspendisse varius quam et ex rutrum, vel efficitur metus suscipit. Cras a efficitur nulla. Quisque at est lacinia, condimentum urna vel, pharetra ex. Donec interdum porttitor tempor.'
 	}, {
 		'name': 'Umbreon',
 		'type': 'Dark',
 		'value': 0,
-		'description': 'Winning personality description here!'
+		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum purus nec consequat ultrices. Vivamus quis risus placerat, scelerisque libero ac, interdum nisl. Proin eu ex turpis. Mauris volutpat, arcu quis fringilla aliquet, massa justo volutpat eros, sed aliquet sem nisi id nisl. Sed sodales eros ipsum. Nam sit amet volutpat lorem. Maecenas vitae pulvinar diam. Suspendisse varius quam et ex rutrum, vel efficitur metus suscipit. Cras a efficitur nulla. Quisque at est lacinia, condimentum urna vel, pharetra ex. Donec interdum porttitor tempor.'
 	}, {
 		'name': 'Leafeon',
 		'type': 'Grass',
 		'value': 0,
-		'description': 'Winning personality description here!'
+		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum purus nec consequat ultrices. Vivamus quis risus placerat, scelerisque libero ac, interdum nisl. Proin eu ex turpis. Mauris volutpat, arcu quis fringilla aliquet, massa justo volutpat eros, sed aliquet sem nisi id nisl. Sed sodales eros ipsum. Nam sit amet volutpat lorem. Maecenas vitae pulvinar diam. Suspendisse varius quam et ex rutrum, vel efficitur metus suscipit. Cras a efficitur nulla. Quisque at est lacinia, condimentum urna vel, pharetra ex. Donec interdum porttitor tempor.'
 	}, {
 		'name': 'Glaceon',
 		'type': 'Ice',
 		'value': 0,
-		'description': 'Winning personality description here!'
+		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum purus nec consequat ultrices. Vivamus quis risus placerat, scelerisque libero ac, interdum nisl. Proin eu ex turpis. Mauris volutpat, arcu quis fringilla aliquet, massa justo volutpat eros, sed aliquet sem nisi id nisl. Sed sodales eros ipsum. Nam sit amet volutpat lorem. Maecenas vitae pulvinar diam. Suspendisse varius quam et ex rutrum, vel efficitur metus suscipit. Cras a efficitur nulla. Quisque at est lacinia, condimentum urna vel, pharetra ex. Donec interdum porttitor tempor.'
 	}, {
 		'name': 'Sylveon',
 		'type': 'Fairy',
 		'value': 0,
-		'description': 'Winning personality description here!'
+		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum purus nec consequat ultrices. Vivamus quis risus placerat, scelerisque libero ac, interdum nisl. Proin eu ex turpis. Mauris volutpat, arcu quis fringilla aliquet, massa justo volutpat eros, sed aliquet sem nisi id nisl. Sed sodales eros ipsum. Nam sit amet volutpat lorem. Maecenas vitae pulvinar diam. Suspendisse varius quam et ex rutrum, vel efficitur metus suscipit. Cras a efficitur nulla. Quisque at est lacinia, condimentum urna vel, pharetra ex. Donec interdum porttitor tempor.'
 	}
 ];
