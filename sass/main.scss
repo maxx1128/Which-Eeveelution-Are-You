@@ -26,11 +26,13 @@
   'components/lists',
   'components/pre',
   'components/parallax',
+  'components/progress-bar',
   'components/buttons';
 
 @import
   'pages/home',
-  'pages/results';
+  'pages/results',
+  'pages/questions';
 
 @import
   'themes/theme',
