@@ -1,8 +1,8 @@
 fieldset {
-  background-color: $secondary-background-color;
+  background-color: lighten(color(light-gray), 10%);
   border: $base-border;
   margin: 0 0 $small-spacing;
-  padding: $base-spacing;
+  padding: $small-spacing $base-spacing;
   border-radius: ($base-border-radius / 2);
 }
 

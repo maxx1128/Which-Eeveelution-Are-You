@@ -22,13 +22,13 @@ $eevee-list: Eevee Vaporeon Jolteon Flareon Espeon Umbreon Leafeon Glaceon Sylve
 	}
 
 	.#{$eeveelution}-static {
-		color: darken(eeveelution(#{$eeveelution}-text), 35%);
-		background-color: lighten(eeveelution(#{$eeveelution}-bg), 35%);
+		color: darken(eeveelution(#{$eeveelution}-text), 5%);
+		background-color: lighten(eeveelution(#{$eeveelution}-bg), 5%);
 	}
 
 	.#{$eeveelution}-resultBox {
-		color: darken(eeveelution(#{$eeveelution}-text), 25%);
-		background-color: lighten(eeveelution(#{$eeveelution}-bg), 25%);
+		color: darken(eeveelution(#{$eeveelution}-text), 5%);
+		background-color: lighten(eeveelution(#{$eeveelution}-bg), 5%);
 	}
 }
 
