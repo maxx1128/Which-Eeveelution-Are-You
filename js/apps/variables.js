@@ -1,6 +1,6 @@
 $scope.QLeft = $scope.questions.length;
 
-$scope.totalPoints = 10;
+$scope.totalPoints = 15;
 
 $scope.quizOver = false;
 

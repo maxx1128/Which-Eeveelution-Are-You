@@ -1,11 +1,11 @@
 /* index key:
-0 - Eevee: 8
-1 - Vaporeon: 7
-2 - Jolteon: 8
-3 - Flareon: 7
-4 - Espeon: 7
-5 - Umbreon: 8
-6 - Leafeon: 7
-7 - Glaceon: 8
-8 - Sylveon: 8
+0 - Eevee: 15
+1 - Vaporeon: 15
+2 - Jolteon: 15
+3 - Flareon: 15
+4 - Espeon: 15
+5 - Umbreon: 15
+6 - Leafeon: 15
+7 - Glaceon: 15
+8 - Sylveon: 15
 */

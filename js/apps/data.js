@@ -21,7 +21,7 @@ $scope.questions = [
 	}, {
 		'number': 2,
 		'selected': '',
-		'question': 'How would you describe your personality?',
+		'question': 'How would you describe yourself in one word?',
 		'answers':[
 			{
 				'text': 'Cheerful',
@@ -41,12 +41,15 @@ $scope.questions = [
 			}, {
 				'text': 'Down to Earth',
 				'index': 0
+			}, {
+				'text': 'Free Spirited',
+				'index': 3
 			}
 		]
 	}, {
 		'number': 3,
 		'selected': '',
-		'question': 'What\s your favorite food or snack?',
+		'question': 'Of the below choices, what\'s your favorite food or snack?',
 		'answers':[
 			{
 				'text': 'Ice Cream',
@@ -61,6 +64,9 @@ $scope.questions = [
 				'text': 'Something with Cheese',
 				'index': 3
 			}, {
+				'text': 'Energy drinks',
+				'index': 2
+			}, {
 				'text': 'Anything, really',
 				'index': 0
 			}
@@ -68,13 +74,13 @@ $scope.questions = [
 	}, {
 		'number': 4,
 		'selected': '',
-		'question': 'What\'s your favorite way to exercise?',
+		'question': 'Which of these is your favorite way to exercise?',
 		'answers':[
 			{
 				'text': 'Jogging outside',
 				'index': 6
 			},{
-				'text': 'Sprinting',
+				'text': 'Something intense',
 				'index': 2
 			}, {
 				'text': 'Yoga and meditation',
@@ -82,6 +88,9 @@ $scope.questions = [
 			}, {
 				'text': 'Swimming',
 				'index': 1
+			}, {
+				'text': 'Dancing',
+				'index': 3
 			}
 		]
 	}, {
@@ -226,7 +235,7 @@ $scope.questions = [
 	}, {
 		'number': 12,
 		'selected': '',
-		'question': 'What\s your favorite holiday in the year?',
+		'question': 'Which of these holidays is your favorite?',
 		'answers':[
 			{
 				'text': 'Christmas',
@@ -245,7 +254,7 @@ $scope.questions = [
 	}, {
 		'number': 13,
 		'selected': '',
-		'question': 'What is your ideal pet?',
+		'question': 'Which of these pets would you like the most?',
 		'answers':[
 			{
 				'text': 'A hedgehog',
@@ -306,6 +315,268 @@ $scope.questions = [
 			}, {
 				'text': 'Flexibility and quick-thinking',
 				'index': 1
+			}
+		]
+	}, {
+		'number': 16,
+		'selected': '',
+		'question': 'Which of the below jobs is your favorite?',
+		'answers':[
+			{
+				'text': 'Teaching',
+				'index': 4
+			}, {
+				'text': 'Cooking',
+				'index': 3
+			}, {
+				'text': 'Gardening',
+				'index': 6
+			}, {
+				'text': 'Anything with lots of traveling',
+				'index': 1
+			}, {
+				'text': 'Being an entertainer!',
+				'index': 8
+			}
+		]
+	}, {
+		'number': 17,
+		'selected': '',
+		'question': 'How do you feel about following rules?',
+		'answers':[
+			{
+				'text': 'They\'re there for a reason, so I follow them',
+				'index': 0
+			}, {
+				'text': 'I often disobey them deliberately',
+				'index': 5
+			}, {
+				'text': 'As long as they don\'t get in my way, I don\'t think about them',
+				'index': 2
+			}, {
+				'text': 'They annoy me, but I grudgingly follow them when needed',
+				'index': 7
+			}
+		]
+	}, {
+		'number': 18,
+		'selected': '',
+		'question': 'Which of the following emotions or moods do you feel the most?',
+		'answers':[
+			{
+				'text': 'Joy',
+				'index': 8
+			}, {
+				'text': 'Thrills',
+				'index': 3
+			}, {
+				'text': 'Carefree',
+				'index': 1
+			}, {
+				'text': 'Disgust',
+				'index': 7
+			}, {
+				'text': 'Mischevious',
+				'index': 5
+			}, {
+				'text': 'Thoughtful',
+				'index': 4
+			}, {
+				'text': 'Calm',
+				'index': 0
+			}, {
+				'text': 'Impatient',
+				'index': 2
+			}, {
+				'text': 'Attentive',
+				'index': 6
+			}
+		]
+	}, {
+		'number': 19,
+		'selected': '',
+		'question': 'What\'s your favorite color?',
+		'answers':[
+			{
+				'text': 'Pink',
+				'index': 8
+			}, {
+				'text': 'Red',
+				'index': 3
+			}, {
+				'text': 'Green',
+				'index': 6
+			}, {
+				'text': 'Blue',
+				'index': 1
+			}, {
+				'text': 'White',
+				'index': 7
+			}, {
+				'text': 'Yellow',
+				'index': 2
+			}, {
+				'text': 'Black',
+				'index': 5
+			}, {
+				'text': 'Brown',
+				'index': 0
+			}, {
+				'text': 'Purple',
+				'index': 4
+			}
+		]
+	}, {
+		'number': 20,
+		'selected': '',
+		'question': 'If you could have one of the below superpowers, which would it be?',
+		'answers':[
+			{
+				'text': 'Create and control fire',
+				'index': 3
+			}, {
+				'text': 'Breathe underwater',
+				'index': 1
+			}, {
+				'text': 'Learn and memorize anything',
+				'index': 4
+			}, {
+				'text': 'Copy powers or strengths from others',
+				'index': 0
+			}, {
+				'text': 'Immortality',
+				'index': 5
+			}, {
+				'text': 'Super speed',
+				'index': 2
+			}, {
+				'text': 'Control nature',
+				'index': 6
+			}
+		]
+	}, {
+		'number': 21,
+		'selected': '',
+		'question': 'Which of the following topics or issues do you care about the most?',
+		'answers':[
+			{
+				'text': 'The Environment',
+				'index': 6
+			}, {
+				'text': 'Education',
+				'index': 4
+			}, {
+				'text': 'Public Safety',
+				'index': 8
+			}, {
+				'text': 'Regulation',
+				'index': 3
+			}, {
+				'text': 'International Relations',
+				'index': 1
+			}, {
+				'text': 'It really depends',
+				'index': 0
+			}, {
+				'text': 'Nothing, I never follow this stuff',
+				'index': 7
+			}
+		]
+	}, {
+		'number': 22,
+		'selected': '',
+		'question': 'What topic do you enjoy talking about the most on a date?',
+		'answers':[
+			{
+				'text': 'Just talking about our days',
+				'index': 0
+			}, {
+				'text': 'Pick one based on something I notice around us',
+				'index': 6
+			}, {
+				'text': 'Whatever topic is in the news',
+				'index': 4
+			}, {
+				'text': 'Any random topics that pop into our heads',
+				'index': 1
+			}, {
+				'text': 'I wouldn\'t do much talking',
+				'index': 7
+			}, {
+				'text': 'Lots of different topics, one after the other',
+				'index': 2
+			}
+		]
+	}, {
+		'number': 23,
+		'selected': '',
+		'question': 'If you had to guess what kind of crime you\'d commit in the future, what would it be?',
+		'answers':[
+			{
+				'text': 'Drug use',
+				'index': 6
+			}, {
+				'text': 'Robbery',
+				'index': 5
+			}, {
+				'text': 'Arson',
+				'index': 3
+			}, {
+				'text': 'Hit and Run',
+				'index': 1
+			}, {
+				'text': 'None, I\'m a model citizen',
+				'index': 8
+			}
+		]
+	}, {
+		'number': 24,
+		'selected': '',
+		'question': 'You see a wallet in the street. What do you do?',
+		'answers':[
+			{
+				'text': 'Just walk past it, not my problem',
+				'index': 7
+			}, {
+				'text': 'Look inside for any info on who lost it',
+				'index': 4
+			}, {
+				'text': 'Pick it up and keep walking, finders keepers',
+				'index': 5
+			}, {
+				'text': 'Quickly ask around to see if anyone lost it',
+				'index': 8
+			}, {
+				'text': 'Find who lost it by running around and asking people nearby',
+				'index': 2
+			}
+		]
+	}, {
+		'number': 25,
+		'selected': '',
+		'question': 'A stranger approaches you and just stands by your side, looking at you. What\'s your reaction?',
+		'answers':[
+			{
+				'text': 'Ask if they need anything',
+				'index': 0
+			}, {
+				'text': 'Talk to them about whatever is on your mind',
+				'index': 1
+			}, {
+				'text': 'Glare at them before slowly walking away',
+				'index': 7
+			}, {
+				'text': 'Welcome them as a new friend and chat happily with them',
+				'index': 8
+			}, {
+				'text': 'Make an observation about them to break the ice',
+				'index': 6
+			}, {
+				'text': 'Completely ignore them and walk away as soon as possible',
+				'index': 5
+			}, {
+				'text': 'Wonder why they\'re doing this in the first place',
+				'index': 4
 			}
 		]
 	}
