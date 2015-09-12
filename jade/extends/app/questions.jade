@@ -7,4 +7,4 @@ fieldset(ng-show="!quizOver")
 					input(type="radio", name="question-{{question.number}}", value="{{answer.index}}", ng-model="question.selected")
 					|	{{answer.text}}
 					br
-				button(ng-click="answer(question.selected)") Answer here!
+				button(ng-click="answer(question.selected)") {{button}}

@@ -5,6 +5,10 @@ $scope.isStatus = function(question){
 $scope.answer = function(number) {
   $scope.results[number].value++ ;
 
+  if ( $scope.idr == ($scope.QLeft - 1) ) {
+  	$scope.button = 'Finish Quiz';
+  }
+
   if($scope.QLeft > $scope.idr) {
   	$scope.idr++ ;
   } else if ($scope.QLeft == $scope.idr) {
