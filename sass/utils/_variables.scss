@@ -135,10 +135,10 @@ $z-layers: (
 /// @see color
 $colors: (
   white: #fff,
-  blue: #477dca,
-  dark-gray: #333,
-  medium-gray: #999,
-  light-gray: #ddd
+  blue: #0D81C5,
+  dark-gray: #6D5236,
+  medium-gray: #A65D03,
+  light-gray: #ffdd99
 );
 
 /// This is the base color for all fonts, including headers. The color value is pulled through the color function.
@@ -157,7 +157,7 @@ $action-color: color(blue);
 /// @type Color
 /// @group Colors
 /// @see colors
-$base-border-color: color(light-gray);
+$base-border-color: color(medium-gray);
 
 /// This is the base border style, including its color and thickness.
 /// @type Values
@@ -211,39 +211,39 @@ $base-timing: ease;
 /// @see eeveelution
 $eeveelutions: (
 
-  Eevee-bg: brown,
-  Eevee-text: brown,
+  Eevee-bg: #F3E4BD,
+  Eevee-text: #C99353,
   Eevee-pic: "http://cdn.playbuzz.com/cdn/52fa385f-efb7-4e00-b872-b7254fc45dcb/18be15f5-2f80-4bea-8b3c-cf8168da4df8.png",
 
-  Vaporeon-bg: blue,
-  Vaporeon-text: blue,
+  Vaporeon-bg: #5DC1CF,
+  Vaporeon-text: #005589,
   Vaporeon-pic: "http://img1.wikia.nocookie.net/__cb20130529163942/adventuretimewithfinnandjake/images/1/18/Dw_vaporeon.png",
 
-  Jolteon-bg: yellow,
-  Jolteon-text: yellow,
+  Jolteon-bg: #D9B200,
+  Jolteon-text: white,
   Jolteon-pic: "http://pldh.net/media/dreamworld/135.png",
 
-  Flareon-bg: red,
-  Flareon-text: red,
+  Flareon-bg: #EDF75A,
+  Flareon-text: #FB5A45,
   Flareon-pic: "http://static.comicvine.com/uploads/original/6/65659/1269269-flareon_fla.png",
 
-  Espeon-bg: purple,
-  Espeon-text: purple,
+  Espeon-bg: #F4D5ED,
+  Espeon-text: #5684AB,
   Espeon-pic: "http://img06.deviantart.net/7d35/i/2013/353/5/1/elegant_espeon_by_red_flare-d6yl7wb.png",
 
-  Umbreon-bg: gray,
-  Umbreon-text: black,
+  Umbreon-bg: #141414,
+  Umbreon-text: #EDA32A,
   Umbreon-pic: "https://lh6.googleusercontent.com/-tQ2H8rMbuAI/U1Q0YH5BoQI/AAAAAAAAB0g/1W_FkuoXTfY/w1900-h1904/Uncle%2BKenny%2527s%2Bfirst%2BUmbreon%2Bvector%25402x.png",
 
-  Leafeon-bg: green,
-  Leafeon-text: green,
+  Leafeon-bg: #74B78C,
+  Leafeon-text: #FEF5D0,
   Leafeon-pic: "http://img00.deviantart.net/9046/i/2013/236/b/9/phyllali___leafeon_by_yonaka_pinku-d6jifwk.png",
 
-  Glaceon-bg: turquoise,
-  Glaceon-text: turquoise,
+  Glaceon-bg: #206FB0,
+  Glaceon-text: #EAFEFE,
   Glaceon-pic: "http://pre09.deviantart.net/9976/th/pre/f/2012/252/1/1/glaceon___shiny_version_by_kizarin-d5e3wht.png",
 
-  Sylveon-bg: pink,
-  Sylveon-text: pink,
+  Sylveon-bg: #FBFCFE,
+  Sylveon-text: #F19BAE,
   Sylveon-pic: "https://lh3.googleusercontent.com/-NOiZPtUCkW0/VeM6R0WWIYI/AAAAAAAAI4c/rKHX4ORxUng/w606-h752/sylveon_by_niekkk-d5v9ii4.png"
 );
