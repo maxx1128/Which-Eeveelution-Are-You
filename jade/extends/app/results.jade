@@ -1,11 +1,11 @@
-.results(ng-show="!quizOver")
+.results(ng-show="quizOver")
 		#js-parallax-window.parallax-window(class="{{result.name}}-static", ng-repeat="result in results | orderBy:'-value' | limitTo:1")
 			.parallax-static-content
-				h2 The winner is {{result.name}}!
+				h2 You got {{result.name}}, the {{result.type}} type!
 				p {{result.description}}
 			#js-parallax-background.parallax-background(class="{{result.name}}-parallax")
 		
 		div.eevee-result(class="{{result.name}}-resultBox", ng-repeat="result in results | orderBy:'-value'")
-			h5 {{result.name}}
+			h4 {{result.name}}
 			p The {{result.type}} Type!
-			p You scored {{result.value}} of {{totalPoints}}
+			p You scored {{ (result.value/totalPoints) * 100 | number : 0}}%
