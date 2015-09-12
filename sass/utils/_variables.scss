@@ -14,7 +14,7 @@
 $breakpoints: (
   mobile: new-breakpoint(min-width 320px),
   mobile-h: new-breakpoint(min-width 480px),
-  tablet: new-breakpoint(min-width 787px),
+  tablet: new-breakpoint(min-width 800px),
   desktop: new-breakpoint(min-width 900px),
   huge: new-breakpoint(min-width 1200px),
 );
@@ -22,22 +22,24 @@ $breakpoints: (
 
 // ----- Typography Variables ----- //
 
+@import url(https://fonts.googleapis.com/css?family=Happy+Monkey|Convergence);
+
 /// The default font family for all text except headers. Can be a specific font family or a Bourbon font stack variable.
 /// @type Variable | String(s)
 /// @group Typography
 /// @link http://bourbon.io/docs/#font-face
-$base-font-family: $lucida-grande;
+$base-font-family: 'Convergence', sans-serif;
 
 /// The default font family for only headers. Can be a specific font family or a Bourbon font variable. By default, it's the same as the base font.
 /// @type Variable | String(s)
 /// @group Typography
-$heading-font-family: $base-font-family;
+$heading-font-family: 'Happy Monkey', cursive;
 
 /// The font size that all other element font sizes are scaled off of. This is often the size of basic paragraph text, and is scaled up for headers.
 /// @type Unit of Size(em)
 /// @group Typography
 /// @see modular-scale-ratio
-$base-font-size: 1em;
+$base-font-size: 1.05em;
 
 /// This is the initial scale of the modular scale ration you want your font sizes to begin at. Typically left at zero, which will make your basic text the same of your base font size. Header font sizes will scale up.
 /// @type Integer
@@ -67,7 +69,7 @@ $modular-scale-base: $base-font-size;
 /// @group Typography
 /// @see modular-size-map
 /// @see modular-scale-ratio
-$scaled-font-ratio: .8;
+$scaled-font-ratio: .75;
 
 /// This uses the Bourbon modular-scale function to create the structure of how fonts will be sized in the modular scale. An each loop is used to generate the scaled font sizes.
 /// @type Map
@@ -91,12 +93,12 @@ $modular-size-map: (
 /// The base line height for all major text elements aside from headers.
 /// @type Integer
 /// @group Typography
-$base-line-height: 1.6;
+$base-line-height: 1.75;
 
 /// The base line height for only headers.
 /// @type Integer
 /// @group Typography
-$heading-line-height: 1.1;
+$heading-line-height: 1.3;
 
 /// For any elements that need a border radius property, this is the standard measure.
 /// @type Integer
