@@ -2,20 +2,38 @@ $scope.questions = [
 	{
 		'number': 1,
 		'selected': '',
-		'question': 'What\'s your favorite season?',
+		'question': 'What\'s your favorite type of weather?',
 		'answers':[
 			{
-				'text': 'Spring',
-				'index': 8
-			},{
-				'text': 'Summer',
-				'index': 3
-			},{
-				'text': 'Fall',
+				'text': 'Sunny and breezy',
 				'index': 6
-			}, {
-				'text': 'Winter',
+			},{
+				'text': 'Cool and drizzly',
 				'index': 7
+			},{
+				'text': 'Anything not extreme',
+				'index': 0
+			}, {
+				'text': 'Rainy',
+				'index': 1
+			}, {
+				'text': 'Dark and cloudy',
+				'index': 5
+			}, {
+				'text': 'Lots of sunshine!',
+				'index': 3
+			}, {
+				'text': 'Sunrise',
+				'index': 8
+			}, {
+				'text': 'Distant thunder',
+				'index': 2
+			}, {
+				'text': 'Anytime with sun',
+				'index': 4
+			}, {
+				'text': 'Anything at night',
+				'index': 5
 			}
 		]
 	}, {
@@ -44,6 +62,12 @@ $scope.questions = [
 			}, {
 				'text': 'Free Spirited',
 				'index': 3
+			}, {
+				'text': 'Outdoorsy',
+				'index': 6
+			}, {
+				'text': 'Independent',
+				'index': 7
 			}
 		]
 	}, {
@@ -61,7 +85,7 @@ $scope.questions = [
 				'text': 'Fruits and vegetables',
 				'index': 6
 			}, {
-				'text': 'Something with Cheese',
+				'text': 'Candy',
 				'index': 3
 			}, {
 				'text': 'Energy drinks',
@@ -69,6 +93,12 @@ $scope.questions = [
 			}, {
 				'text': 'Anything, really',
 				'index': 0
+			}, {
+				'text': 'Something sour',
+				'index': 5
+			}, {
+				'text': 'An apple',
+				'index': 4
 			}
 		]
 	}, {
@@ -80,7 +110,7 @@ $scope.questions = [
 				'text': 'Jogging outside',
 				'index': 6
 			},{
-				'text': 'Something intense',
+				'text': 'Short sprints',
 				'index': 2
 			}, {
 				'text': 'Yoga and meditation',
@@ -91,31 +121,49 @@ $scope.questions = [
 			}, {
 				'text': 'Dancing',
 				'index': 3
+			}, {
+				'text': 'Anything with friends',
+				'index': 8
 			}
 		]
 	}, {
 		'number': 5,
 		'selected': '',
-		'question': 'Favorite time of day?',
+		'question': 'A stranger approaches you and just stands by your side, looking at you. What\'s your reaction?',
 		'answers':[
 			{
-				'text': 'Morning',
-				'index': 4
-			},{
-				'text': 'Night',
+				'text': 'Ask if they need anything',
+				'index': 0
+			}, {
+				'text': 'Talk to them about whatever is on your mind',
+				'index': 1
+			}, {
+				'text': 'Glare at them before slowly walking away',
+				'index': 7
+			}, {
+				'text': 'Welcome them as a new friend and chat happily with them',
+				'index': 8
+			}, {
+				'text': 'Make an observation about them to break the ice',
+				'index': 6
+			}, {
+				'text': 'Completely ignore them and walk away as soon as possible',
 				'index': 5
+			}, {
+				'text': 'Wonder why they\'re doing this in the first place',
+				'index': 4
 			}
 		]
 	}, {
 		'number': 6,
 		'selected': '',
-		'question': 'If you were a fighter in an arena, what would your strategy be?',
+		'question': 'If you were fighting an enemy, what would your winning strategy be?',
 		'answers':[
 			{
 				'text': 'Hit them before they hit me',
 				'index': 2
 			}, {
-				'text': 'Overwhelm them with pure force',
+				'text': 'Overwhelm them with pure, focused force',
 				'index': 6
 			}, {
 				'text': 'Wear them down until they\'re too tired to fight back',
@@ -126,6 +174,15 @@ $scope.questions = [
 			}, {
 				'text': 'Trick them into letting down their guard, then strike',
 				'index': 8
+			}, {
+				'text': 'Lure them into an environment where I have an advantage',
+				'index': 1
+			}, {
+				'text': 'Watch for their biggest weak point and find a way to exploit it',
+				'index': 4
+			}, {
+				'text': 'Go all out and hope enough attacks land',
+				'index': 3
 			}
 		]
 	}, {
@@ -163,16 +220,25 @@ $scope.questions = [
 				'index': 3
 			}, {
 				'text': 'Mystery/Suspense',
-				'index': 5
+				'index': 7
 			}, {
 				'text': 'Family Friendly',
 				'index': 0
+			}, {
+				'text': 'Documentary',
+				'index': 4
+			}, {
+				'text': 'Anything fast-paced',
+				'index': 2
+			}, {
+				'text': 'Horror',
+				'index': 5
 			}
 		]
 	}, {
 		'number': 9,
 		'selected': '',
-		'question': 'You\'re favorite accessory or piece of clothing?',
+		'question': 'You\'re favorite accessory or piece of clothing on this list?',
 		'answers':[
 			{
 				'text': 'A coat or jacket',
@@ -186,6 +252,15 @@ $scope.questions = [
 			}, {
 				'text': 'A necklace',
 				'index': 4
+			}, {
+				'text': 'A bow or bowtie',
+				'index': 8
+			}, {
+				'text': 'Sunglasses',
+				'index': 5
+			}, {
+				'text': 'Boots or gloves',
+				'index': 6
 			}
 		]
 	}, {
@@ -208,6 +283,18 @@ $scope.questions = [
 			}, {
 				'text': 'The beach or a resort',
 				'index': 3
+			}, {
+				'text': 'Depends on the season',
+				'index': 0
+			}, {
+				'text': 'An amusement park',
+				'index': 8
+			}, {
+				'text': 'Somewhere I can read in peace',
+				'index': 4
+			}, {
+				'text': 'An island without many people on it',
+				'index': 5
 			}
 		]
 	}, {
@@ -230,6 +317,18 @@ $scope.questions = [
 			}, {
 				'text': 'They\'re too pessimistic',
 				'index': 8
+			}, {
+				'text': 'They\'re in their house too much',
+				'index': 6
+			}, {
+				'text': 'They\'re not exciting',
+				'index': 3
+			}, {
+				'text': 'They dwell too much on things',
+				'index': 1
+			}, {
+				'text': 'They\'re too clingly',
+				'index': 7
 			}
 		]
 	}, {
@@ -247,8 +346,14 @@ $scope.questions = [
 				'text': 'New Years Eve',
 				'index': 2
 			}, {
-				'text': 'Thanksgiving',
+				'text': 'Earth Day',
 				'index': 6
+			}, {
+				'text': 'Valentine\'s Day',
+				'index': 8
+			}, {
+				'text': 'Thanksgiving',
+				'index': 0
 			}
 		]
 	}, {
@@ -264,13 +369,19 @@ $scope.questions = [
 				'index': 1
 			}, {
 				'text': 'A cat',
-				'index': 0
+				'index': 7
 			}, {
 				'text': 'A dog',
 				'index': 8
 			}, {
 				'text': 'A snake',
 				'index': 5
+			}, {
+				'text': 'A hamster',
+				'index': 3
+			}, {
+				'text': 'Any kind of insect(s)',
+				'index': 6
 			}
 		]
 	}, {
@@ -293,12 +404,24 @@ $scope.questions = [
 			}, {
 				'text': 'A swarm of locusts or viscious insects',
 				'index': 6
+			}, {
+				'text': 'Being locked in a small room',
+				'index': 0
+			}, {
+				'text': 'Being paralyzed or immobile',
+				'index': 2
+			}, {
+				'text': 'Getting trapped in the desert',
+				'index': 1
+			}, {
+				'text': 'Having no friends',
+				'index': 8
 			}
 		]
 	}, {
 		'number': 15,
 		'selected': '',
-		'question': 'What virtue do you appreciate the most in others?',
+		'question': 'What virtue(s) do you appreciate most in others?',
 		'answers':[
 			{
 				'text': 'Genuineness and honesty',
@@ -313,14 +436,26 @@ $scope.questions = [
 				'text': 'Intelligence and wit',
 				'index': 4
 			}, {
-				'text': 'Flexibility and quick-thinking',
+				'text': 'Rolling with the punches',
 				'index': 1
+			}, {
+				'text': 'Quick thinking',
+				'index': 2
+			}, {
+				'text': 'Caring for nature',
+				'index': 6
+			}, {
+				'text': 'Energy and passion',
+				'index': 3
+			}, {
+				'text': 'Being happy with solitude',
+				'index': 5
 			}
 		]
 	}, {
 		'number': 16,
 		'selected': '',
-		'question': 'Which of the below jobs is your favorite?',
+		'question': 'Which of the below jobs or hobbies is your favorite?',
 		'answers':[
 			{
 				'text': 'Teaching',
@@ -337,6 +472,12 @@ $scope.questions = [
 			}, {
 				'text': 'Being an entertainer!',
 				'index': 8
+			}, {
+				'text': 'Exercising',
+				'index': 2
+			}, {
+				'text': 'Not sure, I have a lot',
+				'index': 0
 			}
 		]
 	}, {
@@ -356,6 +497,15 @@ $scope.questions = [
 			}, {
 				'text': 'They annoy me, but I grudgingly follow them when needed',
 				'index': 7
+			}, {
+				'text': 'There\'s always a way around them',
+				'index': 1
+			}, {
+				'text': 'I always question why they need to be followed',
+				'index': 4
+			}, {
+				'text': 'I don\'t even think about them',
+				'index': 3
 			}
 		]
 	}, {
@@ -452,6 +602,9 @@ $scope.questions = [
 			}, {
 				'text': 'Control nature',
 				'index': 6
+			}, {
+				'text': 'Create and control ice',
+				'index': 7
 			}
 		]
 	}, {
@@ -549,34 +702,9 @@ $scope.questions = [
 			}, {
 				'text': 'Find who lost it by running around and asking people nearby',
 				'index': 2
-			}
-		]
-	}, {
-		'number': 25,
-		'selected': '',
-		'question': 'A stranger approaches you and just stands by your side, looking at you. What\'s your reaction?',
-		'answers':[
-			{
-				'text': 'Ask if they need anything',
+			}, {
+				'text': 'I don\'t know, it\'s a tough situation',
 				'index': 0
-			}, {
-				'text': 'Talk to them about whatever is on your mind',
-				'index': 1
-			}, {
-				'text': 'Glare at them before slowly walking away',
-				'index': 7
-			}, {
-				'text': 'Welcome them as a new friend and chat happily with them',
-				'index': 8
-			}, {
-				'text': 'Make an observation about them to break the ice',
-				'index': 6
-			}, {
-				'text': 'Completely ignore them and walk away as soon as possible',
-				'index': 5
-			}, {
-				'text': 'Wonder why they\'re doing this in the first place',
-				'index': 4
 			}
 		]
 	}
