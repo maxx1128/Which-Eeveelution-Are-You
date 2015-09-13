@@ -1,4 +1,7 @@
 .questions(ng-show="!quizOver")
+	.progress-bar
+		span.meter(style="width: {{ (idr/QLeft) * 100 | number : 0 }}%")
+
 	fieldset
 		form
 			.question(ng-repeat="question in questions | filter:isStatus")
@@ -10,6 +13,3 @@
 					|	{{answer.text}}
 					br
 				button.right(ng-click="answer(question.selected)") {{button}}
-
-	.progress-bar
-		span.meter(style="width: {{ (idr/QLeft) * 100 | number : 0 }}%")
