@@ -1,17 +1,17 @@
 .questions(ng-show="!view.quizOver")
-	h5 {{progress}}
-	.progress-bar
-		span.meter(style="width: {{ (q.current/q.left) * 100 | number : 0 }}%")
-
 	fieldset
 		form
 			.question(ng-repeat="question in questions | filter:isStatus")
-				h3 Question {{question.number}}
-				h5 {{question.question}}
+				h3 Question {{question.number}}: {{question.question}}
 				
 				.questions
-					.answer(ng-repeat="answer in question.answers")
-						input(type="radio", name="question-{{question.number}}", value="{{answer.index}}", ng-model="question.selected")
-						p {{answer.text}}
+					.answer-grid(ng-repeat="answer in question.answers")
+						.answer
+							input(type="radio", name="question-{{question.number}}", value="{{answer.index}}", ng-model="question.selected")
+							p {{answer.text}}
 
 				button.right(ng-click="answer(question.selected)") {{buttons.start}}
+
+	h5 {{progress}}
+	.progress-bar
+		span.meter(style="width: {{ (q.current/q.left) * 100 | number : 0 }}%")
