@@ -7,7 +7,7 @@
   $progress-border: 1px solid $progress-border-color;
   $progress-meter-border-color: $action-color;
   $progress-meter-border: 1px solid darken($progress-meter-border-color, 15%);
-  $progress-meter-color: $progress-meter-border-color;
+  $progress-meter-color: lighten(color(medium-gray), 15%);
   $progress-background: darken($base-background-color, 5);
   $progress-animation-duration: 0.7s;
   $progress-height: 30px;
