@@ -6,4 +6,14 @@
 
 .answer {
 	padding: .25em .5em;
+	padding-left: 7.5%;
+	@include fix-flex('left', 1em, 2em);
+
+	input {
+		
+		@include media(breakpoint(tablet)) {
+			margin-top: .4em;
+		}
+	}
 }
+

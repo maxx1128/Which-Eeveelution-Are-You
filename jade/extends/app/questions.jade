@@ -13,6 +13,5 @@
 					.answer(ng-repeat="answer in question.answers")
 						input(type="radio", name="question-{{question.number}}", value="{{answer.index}}", ng-model="question.selected")
 						p {{answer.text}}
-						br
 
 				button.right(ng-click="answer(question.selected)") {{buttons.start}}
