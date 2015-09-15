@@ -4,6 +4,11 @@ $scope.totalPoints = 20;
 $scope.idr = 1;
 
 // Boolean values
+$scope.triggers = {
+	'quizOver': false,
+	'quizBegin': false
+};
+
 $scope.quizOver = false;
 $scope.quizBegin = false;
 

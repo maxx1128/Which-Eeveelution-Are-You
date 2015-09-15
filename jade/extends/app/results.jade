@@ -1,4 +1,4 @@
-.results(ng-show="quizOver")
+.results(ng-show="!triggers.quizOver")
 	h2 Quiz finished! See your results below!
 
 		#js-parallax-window.parallax-window(class="{{result.name}}-static", ng-repeat="result in results | orderBy:'-value' | limitTo:1")

@@ -1,4 +1,4 @@
-.questions(ng-show="!quizOver")
+.questions(ng-show="!triggers.quizOver")
 	h5 {{progress}}
 	.progress-bar
 		span.meter(style="width: {{ (idr/QLeft) * 100 | number : 0 }}%")
