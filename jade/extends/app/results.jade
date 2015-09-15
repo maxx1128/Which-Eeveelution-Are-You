@@ -1,4 +1,6 @@
 .results(ng-show="quizOver")
+	h2 Quiz finished! See your results below!
+
 		#js-parallax-window.parallax-window(class="{{result.name}}-static", ng-repeat="result in results | orderBy:'-value' | limitTo:1")
 			.parallax-static-content
 				h2 You got {{result.name}}, the {{result.type}} type!
