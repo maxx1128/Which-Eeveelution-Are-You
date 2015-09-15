@@ -16,7 +16,7 @@ $scope.answer = function(number) {
   if($scope.QLeft > $scope.idr) {
   	$scope.idr++ ;
   } else if ($scope.QLeft == $scope.idr) {
-  	$scope.booleans.quizOver = true;
+  	$scope.quizOver = true;
   }
 
   if ($scope.idr > ($scope.QLeft - 2)) {

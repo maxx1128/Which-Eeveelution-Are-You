@@ -24,5 +24,5 @@ $scope.progressText = [
 
 $scope.buttons = {
 	'start': 'Next Question',
-	'end': 'Finish Quiz'
+	'end': 'Finish Quiz!'
 };
