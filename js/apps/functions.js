@@ -2,26 +2,30 @@ $scope.isStatus = function(question){
     return (question.number == $scope.idr);
 };
 
+progressCheck = function(point){
+  return $scope.progressText[point].text;
+};
+
 $scope.answer = function(number) {
   $scope.results[number].value++ ;
 
   if ( $scope.idr == ($scope.QLeft - 1) ) {
-  	$scope.button = 'Finish Quiz';
+  	$scope.buttons.start = $scope.buttons.end;
   }
 
   if($scope.QLeft > $scope.idr) {
   	$scope.idr++ ;
   } else if ($scope.QLeft == $scope.idr) {
-  	$scope.quizOver = true;
+  	$scope.booleans.quizOver = true;
   }
 
   if ($scope.idr > ($scope.QLeft - 2)) {
-    $scope.progress = 'The home stretch!';
+    $scope.progress = progressCheck(3);
   } else if ($scope.idr > ($scope.QLeft / 1.5)) {
-    $scope.progress = 'Keep it up!';
+    $scope.progress = progressCheck(2);
   } else if ($scope.idr > ($scope.QLeft / 2)) {
-    $scope.progress = 'Halfway there!';
+    $scope.progress = progressCheck(1);
   } else if ($scope.idr > ($scope.QLeft / 4)) {
-    $scope.progress = 'You\'re getting closer...';
+    $scope.progress = progressCheck(0);
   }
 };

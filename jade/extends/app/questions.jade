@@ -9,8 +9,10 @@
 				h3 Question {{question.number}}
 				h5 {{question.question}}
 				
-				div(ng-repeat="answer in question.answers")
-					input(type="radio", name="question-{{question.number}}", value="{{answer.index}}", ng-model="question.selected")
-					|	{{answer.text}}
-					br
-				button.right(ng-click="answer(question.selected)") {{button}}
+				.questions
+					.answer(ng-repeat="answer in question.answers")
+						input(type="radio", name="question-{{question.number}}", value="{{answer.index}}", ng-model="question.selected")
+						p {{answer.text}}
+						br
+
+				button.right(ng-click="answer(question.selected)") {{buttons.start}}
