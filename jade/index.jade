@@ -2,10 +2,10 @@ include extends/header.jade
 
 body(ng-app="eeveeApp", ng-controller="quizData")
 
-.quiz-enter(ng-show="!triggers.quizBegin")
+.quiz-enter(ng-show="!view.quizBegin")
 	include extends/app/intro.jade
 
-.quiz-start(ng-show="triggers.quizBegin")
+.quiz-start(ng-show="view.quizBegin")
 	include extends/app/questions.jade
 
 	include extends/app/results.jade

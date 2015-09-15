@@ -1,4 +1,4 @@
-.results(ng-show="!triggers.quizOver")
+.results(ng-show="view.quizOver")
 	h2 Quiz finished! See your results below!
 
 	#js-parallax-window.parallax-window(class="{{result.name}}-static", ng-repeat="result in results | orderBy:'-value' | limitTo:1")
@@ -10,4 +10,4 @@
 	div.eevee-result(class="{{result.name}}-resultBox", ng-repeat="result in results | orderBy:'-value'")
 		h4 {{result.name}}
 		p The {{result.type}} Type!
-		p You scored {{ (result.value/totalPoints) * 100 | number : 0}}%
+		p You scored {{ (result.value/q.totalPoints) * 100 | number : 0}}%

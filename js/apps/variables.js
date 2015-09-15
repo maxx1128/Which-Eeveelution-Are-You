@@ -1,16 +1,15 @@
 // Integer Values
-$scope.QLeft = $scope.questions.length;
-$scope.totalPoints = 20;
-$scope.idr = 1;
+$scope.q = {
+	'left' : $scope.questions.length,
+	'totalPoints' : 20,
+	'current' : 1
+}
 
 // Boolean values
-$scope.triggers = {
+$scope.view = {
 	'quizOver': false,
 	'quizBegin': false
 };
-
-$scope.quizOver = false;
-$scope.quizBegin = false;
 
 // String Values
 $scope.progress = 'Still a long way to go...';

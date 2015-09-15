@@ -1,7 +1,7 @@
-.questions(ng-show="!triggers.quizOver")
+.questions(ng-show="!view.quizOver")
 	h5 {{progress}}
 	.progress-bar
-		span.meter(style="width: {{ (idr/QLeft) * 100 | number : 0 }}%")
+		span.meter(style="width: {{ (q.current/q.left) * 100 | number : 0 }}%")
 
 	fieldset
 		form
