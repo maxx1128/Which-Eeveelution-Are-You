@@ -1,13 +1,16 @@
-include extends/header.jade
+doctype html
 
-body(ng-app="eeveeApp", ng-controller="quizData")
+html
+	include extends/header.jade
 
-.quiz-enter(ng-show="!view.quizBegin")
-	include extends/app/intro.jade
+	body(ng-app="eeveeApp", ng-controller="quizData")
 
-.quiz-start(ng-show="view.quizBegin")
-	include extends/app/questions.jade
+		.quiz-enter(ng-show="!view.quizBegin")
+			include extends/app/intro.jade
 
-	include extends/app/results.jade
+		.quiz-start(ng-show="view.quizBegin")
+			include extends/app/questions.jade
 
-include extends/footer.jade
+			include extends/app/results.jade
+
+		include extends/footer.jade

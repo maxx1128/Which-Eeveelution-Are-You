@@ -3,7 +3,7 @@ $scope.q = {
 	'left' : $scope.questions.length,
 	'totalPoints' : 20,
 	'current' : 1
-}
+};
 
 // Boolean values
 $scope.view = {
@@ -14,8 +14,7 @@ $scope.view = {
 // String Values
 $scope.progress = 'Still a long way to go...';
 
-$scope.progressText = [
-	{
+$scope.progressText = [{
 		'text': 'Getting closer...'
 	}, {
 		'text': 'You\'re halfway there!'
@@ -23,8 +22,7 @@ $scope.progressText = [
 		'text': 'Keep going!'
 	}, {
 		'text': 'The home stretch!'
-	}
-];
+}];
 
 $scope.buttons = {
 	'start': 'Next Question',
