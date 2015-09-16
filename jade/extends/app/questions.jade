@@ -10,7 +10,7 @@
 							input(type="radio", name="question-{{question.number}}", value="{{answer.index}}", ng-model="question.selected")
 							p {{answer.text}}
 
-				button.right(ng-click="answer(question.selected)") {{buttons.start}}
+				button.right(ng-click="answer(question.selected)") {{buttons.text}}
 
 	h5 {{progress}}
 	.progress-bar
