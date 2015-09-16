@@ -14,7 +14,8 @@ $eevee-list: Eevee Vaporeon Jolteon Flareon Espeon Umbreon Leafeon Glaceon Sylve
 @each $eeveelution in $eevee-list {
 	.#{$eeveelution}-parallax {
 	  @include media(breakpoint(mobile-h)) {
-		background-image: url(eeveelution(#{$eeveelution}-pic));
+		background-image: url("../img/#{$eeveelution}.png");
+		// background-image: url(eeveelution(#{$eeveelution}-pic));
 	  }
 
 	  // background-color: lighten(eeveelution(#{$eeveelution}-bg), 35%);
