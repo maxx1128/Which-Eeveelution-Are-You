@@ -6,8 +6,10 @@
 			h2 You got {{result.name}}, the {{result.type}} type!
 			p {{result.description}}
 		#js-parallax-background.parallax-background(class="{{result.name}}-parallax")
+
+	h3.result-title How did you score for all the Eeveelutions?
 	
 	div.eevee-result(class="{{result.name}}-resultBox", ng-repeat="result in results | orderBy:'-value'")
 		h4 {{result.name}}
-		p The {{result.type}} Type!
+		h6 The {{result.type}} type
 		p You scored {{ (result.value/q.left) * 100 | number : 0}}%
