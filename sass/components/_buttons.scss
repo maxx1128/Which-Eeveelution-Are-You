@@ -2,14 +2,14 @@
   appearance: none;
   background-color: $action-color;
   border: 0;
-  border-radius: $base-border-radius;
+  border-radius: $base-border-radius * 3;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1;
   padding: $small-spacing $base-spacing;
   text-decoration: none;
@@ -22,7 +22,6 @@
   &:hover,
   &:focus {
     background-color: shade($action-color, 20%);
-    color: #fff;
   }
 
   &:disabled {
