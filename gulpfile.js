@@ -1,8 +1,9 @@
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
+    minifyCSS = require('gulp-minify-css'),
     livereload = require('gulp-livereload'),
-    prefix = require('gulp-autoprefixer'),
+    autoprefixer = require('gulp-autoprefixer'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
     jade = require('gulp-jade'),
@@ -155,6 +156,16 @@ gulp.task('jade', function() {
         .pipe(livereload());
 });
 
+gulp.task('prod-init', function () {
+  return gulp
+    .src(sassInput)
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .on("error", notify.onError("Error:" + errorLog))
+    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest(config.assetsPath + 'css'));
+});
+
 gulp.task('clean', function () {
     return del([
         'build/extends'
@@ -180,4 +191,4 @@ gulp.task('docwatch', ['sassdoc','jsdoc'], function(){
 });
 
 gulp.task('default', ['scripts', 'sass', 'jade', 'images', 'watch']);
-gulp.task('prod', ['sassdoc', 'jsdoc', 'clean', 'prod-init', 'uncss']);
+gulp.task('prod', ['sassdoc', 'jsdoc', 'clean', 'prod-init']);
