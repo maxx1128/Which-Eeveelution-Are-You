@@ -12,7 +12,8 @@
 	background-color: purple;
 	text-align: center;
 	box-sizing: border-box;
-	padding: .5em;
+	@include padding(.5em 1em);
+	@include margin(.3em);
 }
 
 $eevee-list: Eevee Vaporeon Jolteon Flareon Espeon Umbreon Leafeon Glaceon Sylveon;
@@ -48,4 +49,9 @@ $eevee-list: Eevee Vaporeon Jolteon Flareon Espeon Umbreon Leafeon Glaceon Sylve
   top: - $parallax-window-height / 2;
   width: 100%;
   background-size: 35%;
+}
+
+.final-button {
+	display: block;
+	@include margin(1em auto null auto);
 }

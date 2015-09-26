@@ -1,5 +1,5 @@
-.results(ng-show="view.quizOver")
-	h2 Quiz finished! See your results below!
+.results(ng-show="view.quizOver").center
+	h2 Congrats, you finished the quiz!
 
 	#js-parallax-window.parallax-window(class="{{result.name}}-static", ng-repeat="result in results | orderBy:'-value' | limitTo:1")
 		.parallax-static-content
@@ -9,7 +9,9 @@
 
 	h3.result-title How did you score for all the Eeveelutions?
 	
-	div.eevee-result(class="{{result.name}}-resultBox", ng-repeat="result in results | orderBy:'-value'")
-		h4 {{result.name}}
-		h6 The {{result.type}} type
-		p You scored {{ (result.value/q.left) * 100 | number : 0}}%
+	.side-results
+		.eevee-result(class="{{result.name}}-resultBox", ng-repeat="result in results | orderBy:'-value'")
+			h4 {{result.name}}
+			h6 The {{result.type}} type
+			p You scored {{ (result.value/q.left) * 100 | number : 0}}%
+	button.refresh.final-button Play Again

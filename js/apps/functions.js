@@ -17,7 +17,7 @@ $scope.answer = function(number) {
   $scope.results[number].value++ ; // Adds the selected value to the results
 
   if ( $scope.q.current == ($scope.q.left - 1) ) { //When the user is at the last question
-  	$scope.buttons.start = $scope.buttons.end; //Changes the button text for the last question to the end text
+  	$scope.buttons.text = $scope.buttons.end; //Changes the button text for the last question to the end text
   }
 
   if($scope.q.left > $scope.q.current) { // If there's still questions left to answer

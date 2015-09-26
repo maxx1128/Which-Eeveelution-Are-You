@@ -1,8 +1,8 @@
-.results {
+.side-results {
 	display: flex;
 	flex-wrap: wrap;
 
 	.eevee-result {
-		flex: 1 0 15em;
+		flex: 1 1 auto;
 	}
 }

@@ -70,7 +70,7 @@ $scope.questions = [
 	}, {
 		'number': 3,
 		'selected': '',
-		'question': 'Of the below choices, what\'s your favorite food or snack?',
+		'question': 'Of these choices, what\'s your favorite food or snack?',
 		'answers':[
 			{
 				'text': 'Ice Cream',
@@ -101,7 +101,7 @@ $scope.questions = [
 	}, {
 		'number': 4,
 		'selected': '',
-		'question': 'Which of these is your favorite way to exercise?',
+		'question': 'Which is your favorite way to exercise?',
 		'answers':[
 			{
 				'text': 'Jogging outside',
@@ -126,7 +126,7 @@ $scope.questions = [
 	}, {
 		'number': 5,
 		'selected': '',
-		'question': 'A stranger approaches you and just stands by your side, looking at you. What\'s your reaction?',
+		'question': 'A stranger approaches you and stands by your side, looking at you. What\'s your reaction?',
 		'answers':[
 			{
 				'text': 'Ask if they need anything',
@@ -138,13 +138,13 @@ $scope.questions = [
 				'text': 'Glare at them before slowly walking away',
 				'index': 7
 			}, {
-				'text': 'Welcome them as a new friend and chat happily with them',
+				'text': 'Welcome them as a new friend and chat with them',
 				'index': 8
 			}, {
 				'text': 'Make an observation about them to break the ice',
 				'index': 6
 			}, {
-				'text': 'Completely ignore them and walk away as soon as possible',
+				'text': 'Completely ignore them and walk away',
 				'index': 5
 			}, {
 				'text': 'Wonder why they\'re doing this in the first place',
@@ -154,10 +154,10 @@ $scope.questions = [
 	}, {
 		'number': 6,
 		'selected': '',
-		'question': 'If you were fighting an enemy, what would your winning strategy be?',
+		'question': 'If you were fighting an enemy, what would your strategy be?',
 		'answers':[
 			{
-				'text': 'Hit them before they hit me',
+				'text': 'Hit them before they hit you',
 				'index': 2
 			}, {
 				'text': 'Overwhelm them with pure, focused force',
@@ -172,7 +172,7 @@ $scope.questions = [
 				'text': 'Trick them into letting down their guard, then strike',
 				'index': 8
 			}, {
-				'text': 'Lure them into an environment where I have an advantage',
+				'text': 'Lure them into an environment where you have an advantage',
 				'index': 1
 			}, {
 				'text': 'Watch for their biggest weak point and find a way to exploit it',
@@ -194,7 +194,7 @@ $scope.questions = [
 				'text': 'No, I\'m usually pretty calm',
 				'index': 7
 			}, {
-				'text': 'Maybe. I get as excited as the next person, really',
+				'text': 'Maybe. I get as excited as the next person',
 				'index': 0
 			}, {
 				'text': 'Yes, it isn\'t hard to get me jumping for something',
@@ -238,19 +238,19 @@ $scope.questions = [
 		'question': 'You\'re favorite accessory or piece of clothing on this list?',
 		'answers':[
 			{
-				'text': 'A coat or jacket',
+				'text': 'Coat or jacket',
 				'index': 7
 			}, {
-				'text': 'A scarf',
+				'text': 'Scarf',
 				'index': 3
 			}, {
-				'text': 'A swimsuit',
+				'text': 'Swimsuit',
 				'index': 1
 			}, {
-				'text': 'A necklace',
+				'text': 'Necklace',
 				'index': 4
 			}, {
-				'text': 'A bow or bowtie',
+				'text': 'Bow or bowtie',
 				'index': 8
 			}, {
 				'text': 'Sunglasses',
@@ -290,7 +290,7 @@ $scope.questions = [
 				'text': 'Somewhere I can read in peace',
 				'index': 4
 			}, {
-				'text': 'An island without many people on it',
+				'text': 'An island without many people',
 				'index': 5
 			}
 		]
@@ -324,7 +324,7 @@ $scope.questions = [
 				'text': 'They dwell too much on things',
 				'index': 1
 			}, {
-				'text': 'They\'re too clingly',
+				'text': 'They\'re too clingy',
 				'index': 7
 			}
 		]
@@ -340,7 +340,7 @@ $scope.questions = [
 				'text': 'July 4th',
 				'index': 3
 			}, {
-				'text': 'New Years Eve',
+				'text': 'New Year\'s Eve',
 				'index': 2
 			}, {
 				'text': 'Earth Day',
@@ -359,22 +359,22 @@ $scope.questions = [
 		'question': 'Which of these pets would you like the most?',
 		'answers':[
 			{
-				'text': 'A hedgehog',
+				'text': 'Hedgehog',
 				'index': 2
 			}, {
 				'text': 'One or multiple fish',
 				'index': 1
 			}, {
-				'text': 'A cat',
+				'text': 'Cat',
 				'index': 7
 			}, {
-				'text': 'A dog',
+				'text': 'Dog',
 				'index': 8
 			}, {
-				'text': 'A snake',
+				'text': 'Snake',
 				'index': 5
 			}, {
-				'text': 'A hamster',
+				'text': 'Hamster',
 				'index': 3
 			}, {
 				'text': 'Any kind of insect(s)',
@@ -390,19 +390,19 @@ $scope.questions = [
 				'text': 'Getting lost in a park at night',
 				'index': 4
 			}, {
-				'text': 'Being in a building set on fire',
+				'text': 'Being in a building on fire',
 				'index': 7
 			}, {
 				'text': 'Getting lost at sea',
 				'index': 3
 			}, {
-				'text': 'Being embarassed or humiliated in front of a lot of people',
+				'text': 'Being embarassed or humiliated in front of many people',
 				'index': 5
 			}, {
-				'text': 'A swarm of locusts or viscious insects',
+				'text': 'A swarm of locusts or vicious insects',
 				'index': 6
 			}, {
-				'text': 'Being locked in a small room',
+				'text': 'Locked in a small room',
 				'index': 0
 			}, {
 				'text': 'Being paralyzed or immobile',
@@ -418,7 +418,7 @@ $scope.questions = [
 	}, {
 		'number': 15,
 		'selected': '',
-		'question': 'What virtue(s) do you appreciate most in others?',
+		'question': 'What virtue(s) do you appreciate the most in others?',
 		'answers':[
 			{
 				'text': 'Genuineness and honesty',
@@ -427,13 +427,13 @@ $scope.questions = [
 				'text': 'Composure and a cool attitude',
 				'index': 7
 			}, {
-				'text': 'An optimistic view on life',
+				'text': 'An optimistic view of life',
 				'index': 8
 			}, {
 				'text': 'Intelligence and wit',
 				'index': 4
 			}, {
-				'text': 'Rolling with the punches',
+				'text': 'Going with the flow',
 				'index': 1
 			}, {
 				'text': 'Quick thinking',
@@ -467,7 +467,7 @@ $scope.questions = [
 				'text': 'Anything with lots of traveling',
 				'index': 1
 			}, {
-				'text': 'Being an entertainer!',
+				'text': 'Being an entertainer',
 				'index': 8
 			}, {
 				'text': 'Exercising',
@@ -486,22 +486,22 @@ $scope.questions = [
 				'text': 'They\'re there for a reason, so I follow them',
 				'index': 0
 			}, {
-				'text': 'I often disobey them deliberately',
+				'text': 'I often disobey them on purpose',
 				'index': 5
 			}, {
-				'text': 'As long as they don\'t get in my way, I don\'t think about them',
+				'text': 'As long as they don\'t get in my way, I don\'t care',
 				'index': 2
 			}, {
-				'text': 'They annoy me, but I grudgingly follow them when needed',
+				'text': 'They annoy me, but I grudgingly follow them',
 				'index': 7
 			}, {
 				'text': 'There\'s always a way around them',
 				'index': 1
 			}, {
-				'text': 'I always question why they need to be followed',
+				'text': 'I always question why they need to be followed at all',
 				'index': 4
 			}, {
-				'text': 'I don\'t even think about them',
+				'text': 'I don\'t think about them',
 				'index': 3
 			}
 		]
@@ -514,7 +514,7 @@ $scope.questions = [
 				'text': 'Joy',
 				'index': 8
 			}, {
-				'text': 'Thrills',
+				'text': 'Excitement',
 				'index': 3
 			}, {
 				'text': 'Carefree',
@@ -523,7 +523,7 @@ $scope.questions = [
 				'text': 'Disgust',
 				'index': 7
 			}, {
-				'text': 'Mischevious',
+				'text': 'Mischievous',
 				'index': 5
 			}, {
 				'text': 'Thoughtful',
@@ -591,7 +591,7 @@ $scope.questions = [
 				'text': 'Copy powers or strengths from others',
 				'index': 0
 			}, {
-				'text': 'Immortality',
+				'text': 'Turn invisible',
 				'index': 5
 			}, {
 				'text': 'Super speed',
@@ -610,7 +610,7 @@ $scope.questions = [
 		'question': 'Which of the following topics or issues do you care about the most?',
 		'answers':[
 			{
-				'text': 'The Environment',
+				'text': 'Environment',
 				'index': 6
 			}, {
 				'text': 'Education',
@@ -619,7 +619,7 @@ $scope.questions = [
 				'text': 'Public Safety',
 				'index': 8
 			}, {
-				'text': 'Regulation',
+				'text': 'Laws we follow',
 				'index': 3
 			}, {
 				'text': 'International Relations',
@@ -635,16 +635,16 @@ $scope.questions = [
 	}, {
 		'number': 22,
 		'selected': '',
-		'question': 'What topic do you enjoy talking about the most on a date?',
+		'question': 'What topic do you enjoy talking about most on a date?',
 		'answers':[
 			{
 				'text': 'Just talking about our days',
 				'index': 0
 			}, {
-				'text': 'Pick one based on something I notice around us',
+				'text': 'Pick one based on something around us',
 				'index': 6
 			}, {
-				'text': 'Whatever topic is in the news',
+				'text': 'Whatever is in the news',
 				'index': 4
 			}, {
 				'text': 'Any random topics that pop into our heads',
@@ -656,14 +656,14 @@ $scope.questions = [
 				'text': 'Lots of different topics, one after the other',
 				'index': 2
 			}, {
-				'text': 'Dating? I barely do any dating, if any at all',
+				'text': 'Dating? I barely do any, if at all',
 				'index': 5
 			}
 		]
 	}, {
 		'number': 23,
 		'selected': '',
-		'question': 'If you had to guess what kind of crime you\'d commit in the future, what would it be?',
+		'question': 'If you had to guess what kind of crime you\'d commit, what would it be?',
 		'answers':[
 			{
 				'text': 'Drug use',
@@ -688,19 +688,19 @@ $scope.questions = [
 		'question': 'You see a wallet in the street. What do you do?',
 		'answers':[
 			{
-				'text': 'Just walk past it, not my problem',
+				'text': 'Just walk past it, it\'s not my problem',
 				'index': 7
 			}, {
 				'text': 'Look inside for any info on who lost it',
 				'index': 4
 			}, {
-				'text': 'Pick it up and keep walking, finders keepers',
+				'text': 'Pick it up and keep walking. Finders keepers!',
 				'index': 5
 			}, {
-				'text': 'Quickly ask around to see if anyone lost it',
+				'text': 'Ask around to try and find who lost it',
 				'index': 8
 			}, {
-				'text': 'Find who lost it by running around and asking people nearby',
+				'text': 'Running around rapidly and asking people',
 				'index': 2
 			}, {
 				'text': 'I don\'t know, it\'s a tough situation',
@@ -713,46 +713,46 @@ $scope.questions = [
 		'name': 'Eevee',
 		'type': 'Normal',
 		'value': 0,
-		'description': 'You\'re a very well-rounded and open-minded person, willing to hear new perspectives and not limit yourself to a set path. Like Eevee itself, the future is open to many possibilities! Take advantage of this by being as adventurous as possible, and remember to take some risks! However, you likely have a habit of being indecisive or naive at important moments. Don\'t be afraid to stand up for your beliefs and put your foot down!. As time goes and your identity takes greater shape, you have to be willing to fight for who you are.'
+		'description': 'You\'re a very well-rounded and open-minded person, willing to hear new perspectives and not limit yourself to a set path. Like Eevee itself, the future has many possibilities! Take advantage of this and be as adventurous as possible, and remember to take some risks! However, you likely have a habit of being indecisive or naive at important moments. Don\'t be afraid to stand up for your beliefs and put your foot down. As your identity gets clearer to you, be willing to fight for who you are.'
 	}, {
 		'name': 'Vaporeon',
 		'type': 'Water',
 		'value': 0,
-		'description': 'You have a very flexible personality that can easily roll with the punches and hardly be caught off guard. If things don\'t go according to plan, you\'ll likely just yell "Plot Twist!" and keep going. This gives you many different sides to your personality, but be careful. You have a tendency to be inconsistent with your goals, so have some more self-discipline! Don\'t let the people or circumstances around you control you too much, otherwise it\'ll be really hard to get what you want in life.'
+		'description': 'You have a very flexible personality that can easily roll with the punches and rarely get caught off guard. If things don\'t go according to plan, you\'ll yell "Plot Twist!" and keep going. This gives you many different sides to your personality, but be careful. You have a tendency to be inconsistent with your goals, so have some more self-discipline! Don\'t let the people or circumstances around you control you too much. Otherwise it\'ll be hard to get what you want in life.'
 	}, {
 		'name': 'Jolteon',
 		'type': 'Electric',
 		'value': 0,
-		'description': 'You have no shortage of energy, as life is a race and you\'re always charging ahead at full speed! When you\'re excited for something you have plenty of enthusiasm, and that\'ll energize everyone around you too. But keep in mind that while you\'re great at doing things short-term, you need to keep the bigger picture of your life in mind too. Don\'t forget to slow down, pay attention to the details, and make some longer goals for yourself. Otherwise all that energy you have will burn out far too fast!'
+		'description': 'You have no shortage of energy, as life is a race and you\'re charging ahead at full speed! When you\'re excited you have plenty of enthusiasm, which energizes everyone around you. But keep in mind while you\'re great at doing things short-term, you need to remember the bigger picture too. Don\'t forget to slow down, pay attention to the details, and make some long-term goals. Otherwise all your energy will burn out far too fast!'
 	}, {
 		'name': 'Flareon',
 		'type': 'Fire',
 		'value': 0,
-		'description': 'You rarely let anyone or anything hold you back, as the world is your playground and you\'re enjoying the games as much as possible. What\'s important is seeing the outside world and finding new experiences. Chances are you have either great stories to share or ambitious plans to put together. However, it\'s easy for you to get carried away and wind up lost in the woods of life. Adventure is good, but don\'t cross the line into aimless wandering, not knowing where to go less. Try to take a more mature approach to life, set a couple limits, and set aside some "serious" time every week.'
+		'description': 'You rarely let anyone or anything hold you back, as the world is your playground and you\'re enjoying the games a lot. What\'s important is seeing the world and finding new experiences. Chances are you have either great stories to share or ambitious plans to put together. However, it\'s easy to get carried away and wind up lost in the woods of life. Adventure is good, but don\'t cross the line into aimless wandering where you don\'t know where to go next. Try to take a more mature approach to life, set a couple limits, and have some "serious" time every week.'
 	}, {
 		'name': 'Espeon',
 		'type': 'Psychic',
 		'value': 0,
-		'description': 'You\'re a major intellectual, almost always looking to learn more about the world, your passions, and anything interesting. It\'s very hard for others to fool you, or for important details to slip past your memory. Curiousity and self-motivation are always driving you to keep learning. But don\'t let your relentless pursuit of knowledge keep you from other experiences too. Put that knowledge to use every now and then and pursue new experiences you\'re not familiar with. Don\'t worry if you\'re nervous, no matter what happens you\'ll think of a way to handle it.'
+		'description': 'You\'re a major intellectual, almost always looking to learn more about the world, your passions, and anything interesting. It\'s very hard for others to fool you, or for important details to slip past you. Curiousity and self-motivation drive you to keep learning. But don\'t let your relentless pursuit of knowledge keep you from other experiences. Put that knowledge to use every now and then and pursue unfamiliar experiences. Don\'t worry if you\'re nervous - no matter what happens, you can think of a way to handle it.'
 	}, {
 		'name': 'Umbreon',
 		'type': 'Dark',
 		'value': 0,
-		'description': 'You\'re a a very private person, with lots of secrets and a complex mind. You\'re fine operating mostly alone and can handle almost any situation by yourself, even when most people would want someone they knew nearby. Take advantage of this and push yourself to your limits whenever possible! However, just because you feel okay living life alone doesn\'t mean you should. You can easily get too withdrawn from others and feel lonely from time to time. It\'s hard, but try to put yourself out there more so you can have some more friends nearby for your next adventure.'
+		'description': 'You\'re a a very private person, with lots of secrets and a complex mind. You\'re fine operating alone and can handle almost any situation yourself - even when most people couldn\'t. Take advantage of this and push yourself to your limits whenever possible! However, just because you feel okay living life alone doesn\'t mean you always should. You can easily get too withdrawn from others and feel lonely. Try to put yourself out there more so you can have more friends nearby for your next adventure.'
 	}, {
 		'name': 'Leafeon',
 		'type': 'Grass',
 		'value': 0,
-		'description': 'You\'re very conscious of your environment, both environmentally and understanding what\'s around you. Details most people would glaze over are often spotted by you, helping you be more resourceful and practical. Chances are you\'ve got plenty of great survival skills, and can do a lot more with a lot less than many others. Plus you try to leave your home, and planet, at least as healthy as it was when you arrived. Just don\'t get too caught up in what\'s already around you. Unleash your creative side and do some inventing to add to this world as well as keeping it healthy!'
+		'description': 'You\'re very conscious of what\'s around you, both environmentally and in general. You spot details most people would glaze over, helping you be more resourceful and practical. Chances are you\'ve got great survival skills, and can do a lot more with a lot less. Plus you try to leave your planet at least as healthy as when you arrived. Just don\'t get too caught up in what\'s already around you. Unleash your creativity and do some inventing. Add to this world as well as keeping it healthy!'
 	}, {
 		'name': 'Glaceon',
 		'type': 'Ice',
 		'value': 0,
-		'description': 'You\'re a very composed and "in-control" person that\'s very hard to throw off balance. While there\'s almost always a way to get under someone\'s skin, people have a hard time messing with you. You know what you want, where you\'re going, and have all your priorities right where they should be. But while you have a good head on your shoulders, don\'t get stuck in it for too long. Otherwise you\'ll drift away from what\'s around you, getting cynical or mean-spirited in the process. So be sure how you deal with others is as consistent and healthy as how you deal with yourself.'
+		'description': 'You\'re a very composed and "in-control" person that\'s hard to throw off balance. While there\'s almost always a way to get under someone\'s skin, that rarely happens to you. You know what you want, where you\'re going, and have all your priorities where they should be. But while you have a good head on your shoulders, don\'t get stuck in your mind for too long. Otherwise you\'ll drift away from what\'s around you, getting cynical or mean-spirited in the process. So be sure how you deal with others is as consistent and healthy as how you deal with yourself.'
 	}, {
 		'name': 'Sylveon',
 		'type': 'Fairy',
 		'value': 0,
-		'description': 'People likely smile the second they see you, since you make almost everyone smile as well. Helping others, both friends and strangers, are high priorities as you try and help others as much as possible. You\'ll likely make a difference in many people\'s lives, and brighten up their days in the progress. While you make the world better for so many others though, obviously you can\'t forget your happiness as well. Make some "me time" a priority in your routine, since it\'ll be harder for you to keep helping others if you wither out. After all, others care for your happiness as much as you care for theirs. Don\'t let them down!'
+		'description': 'People likely smile the second they see you from your memories with each other. Helping others, friends and strangers, are high priorities as you try and help others as much as possible. You\'ll likely make a difference in many people\'s lives, and brighten up their days too. While you make the world better for many others, obviously you can\'t forget your happiness either. Make some "me time" a priority, since it\'ll be hard for you to keep helping others if you fizzle out. After all, others care for your happiness as much as you care for theirs. Don\'t let them down!'
 	}
 ];
